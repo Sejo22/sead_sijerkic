@@ -289,6 +289,7 @@ RESPONSIVE--------------------------------------------------------*/
   }
   .home-pic {
     width: 150px;
+    height: 150px;
   }
   .home-title {
     font-size: 2.5rem;
@@ -497,9 +498,12 @@ RESPONSIVE--------------------------------------------------------*/
 }
 
 @media (min-width: 1200px) {
+  .main {
+    height: 100vh;
+  }
   .home-pic {
     height: 200px;
-    width: auto;
+    width: 200px;
   }
   .home-title {
     font-size: 5rem;
