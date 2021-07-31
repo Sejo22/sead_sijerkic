@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>TipSee | Mobile App | Tipping made easy</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-wrapper">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="social-links">
+                <div class="social-links-wrapper">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="toggle-btn" onclick="showSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        
+        <div class="home-image">
+            <img src="images/ec9f11_eed8a818ab4546968d5c3fb917b933ec~mv2_d_3430_2286_s_2.webp" alt="">
+            <div class="home-img-overlay"></div>
+            <h1 class="overlay-text">Tip the old fashioned way… when you believe <br> the service was worth it and not because you’ve been forced to! </h1>
+        </div>
+    </div>
+    <div id="overlay" onclick="showSidebar()">
+    </div>
+    <div id="sidebar">
+        <div class="close-btn" onclick="showSidebar()">
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="q-a.html">Q&A</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="images/logo.png" alt="sidebar-img" class="sidebar-img">
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

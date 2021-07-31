@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header id="navbar">
+            <div class="logo-wrapper">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="social-links">
+                <div class="social-links-wrapper">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                
+            </div>
+            <div class="toggle-btn" onclick="showSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <div class="q-a-title">
+            <h1>Frequently asked questions...and answers!</h1>
+            <h3>A few questions and answers that address the obvious:</h3>
+        </div>
+
+        <div class="q-a-wrapper">
+            <details>
+                <summary>Is the TipSee™ app free to install?</summary>
+                <div class="q-a-content">
+                    <p>The TipSee™ app is free to install.</p>
+                </div>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </details>
+            <hr>
+            
+            <details>
+                <summary>What does it cost to use the TipSee™ app? </summary>
+                <div class="q-a-content">
+                    <p>Just $0.10 is deducted from the total value of a tip being offered by a tipper to a tippee.</p>
+                </div>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </details>
+            <hr>
+            
+            <details>
+                <summary>Why try and change the way consumers tip?</summary>
+                <div class="q-a-content">
+                    <p>We’re trying to retain the old fashioned way of tipping with the TipSeeTM app because we believe the change from tipping with cash to tipping via a digital payment experience has been exploited in such a manner as to force consumers to tip. </p>
+                </div>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </details>
+            <hr>
+            
+            <details>
+                <summary>Wouldn't a tippee get more if I just add a tip when I pay the bill?</summary>
+                <div class="q-a-content">
+                    <p>Merchants pay a fee for accepting card payments and we hope that the eventual fee paid when using the TipSee™ app will be less than that paid by the merchant for the same value and as a result, the tippee will receive more.</p>
+                </div>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </details>
+            <hr>
+    
+            <details>
+                <summary>Why can't I see a record of who I've tipped on the TipSee app?</summary>
+                <div class="q-a-content">
+                    <p>Because the philosophy of the TipSee™ app is to re-introduce tipping the old fashioned way. An emotional reward made at a given point in time for a particular service that then needs no retrospective consideration. Just like tipping with cash.</p>
+                </div>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </details>
+            <hr>
+            
+            <details>
+                <summary>When will the TipSee app be available thoughout Australia?</summary>
+                <div class="q-a-content">
+                    <p>Once we’ve completed our testing in Victoria we aim to market the TipSee™ app throughout Australia and encourage Australians to tip the old fashioned way. The right way!</p>
+                </div>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </details>
+            <hr>
+            
+            <details>
+                <summary>What do I do if I have a question that is't answered here?</summary>
+                <div class="q-a-content">
+                    <p>Please feel free to email us at <a href="mailto:contact@tipseeapp.com">Contact@tipseeapp.com</a> and we’ll do our best to answer your question.</p>
+                </div>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </details>
+            <hr>
+        </div>
+        
+        
+    </div>
+    <div id="overlay" onclick="showSidebar()">
+    </div>
+    <div id="sidebar">
+        <div class="close-btn" onclick="showSidebar()">
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a class="active" href="q-a.html">Q&A</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="images/logo.png" alt="sidebar-img" class="sidebar-img">
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
