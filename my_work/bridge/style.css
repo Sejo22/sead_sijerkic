@@ -23,6 +23,14 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
+}
+section {
+  height: 150vh;
+}
+
+#hero {
+  height: 100vh;
 }
 
 a {
@@ -54,7 +62,6 @@ a {
 }
 
 .swiper-container {
-  background-color: aqua;
   height: 100vh;
   position: relative;
 }
@@ -163,11 +170,13 @@ select {
   border-top: 5px solid transparent;
 }
 
-.swiper-card:hover {
+.swiper-card:hover,
+.swiper-card.active {
   border-top: solid var(--dark-red) 5px;
 }
 
-.swiper-card:hover p {
+.swiper-card:hover p,
+.swiper-card.active p {
   color: var(--red);
 }
 
@@ -221,4 +230,110 @@ select {
 
 .menu-link.active:hover {
   border-bottom: 7px solid var(--menu-red);
+}
+.new-music {
+  position: relative;
+}
+
+.top-section {
+  position: relative;
+}
+
+.bg-title {
+  text-transform: uppercase;
+  color: rgba(153, 153, 153, 0.09);
+  font-size: 9rem;
+  font-weight: 800;
+  padding-left: 4rem;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+}
+.title h1 {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.title h2 {
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 5rem;
+}
+
+.slider2 {
+  width: 97%;
+  margin-left: 0 auto;
+  max-height: 340px;
+}
+
+.freemode {
+  max-height: 300px;
+  position: relative;
+}
+
+.freemode p {
+  padding-top: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  max-width: 70%;
+  background-color: #fff;
+  color: var(--red);
+  font-size: 0.875rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.freemode img {
+  height: 300px;
+  width: 300px;
+}
+
+.industry-news {
+  background-color: #000;
+  position: relative;
+}
+
+.industry-news .top-section {
+  width: 100%;
+  justify-content: space-evenly;
+}
+.industry-news .bg-title {
+  float: right;
+  color: rgba(153, 153, 153, 0.12);
+}
+
+.industry-news .title-i {
+  position: relative;
+}
+
+.industry-news .title-i h1 {
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.industry-news .title-i h2 {
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 5rem;
+}
+
+.black-bg {
+  width: 2000px;
+  height: 650px;
+  background-color: #000;
+  transform: rotate(-8deg);
+  position: absolute;
+  top: -20%;
+  z-index: -5;
 }
