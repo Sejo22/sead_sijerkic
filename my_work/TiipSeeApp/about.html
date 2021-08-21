@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-wrapper">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="social-links">
+                <div class="social-links-wrapper">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                
+            </div>
+            <div class="toggle-btn" onclick="showSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <div class="about-content">
+            <img src="images/about-us.webp" alt="">
+            <div class="about-text">
+                <h1>About TipSee</h1>
+                <p>TheTipSee™ app is a unique Australian development undertaken by AppSar Pty Ltd and is currently being tested exclusively in Melbourne, Victoria, Australia. <br> <br>
+                    The aim of the app is to return the art of tipping back to that of being a choice for the consumer to make, completely independently of the eventual final service charge.<br> <br>
+                    As we move away from the use of cash as a means by which to advance incremental reward, the basis on which we’re being asked to advance a tip - as part of the final digital payment experience - leaves many accepting the additional charge against their emotional beliefs with a sense of having been coerced into making the payment for fear of being considered ungrateful.<br> <br>
+                    TipSee™ merely seeks to readdress the balance and return tipping to the way it used to be. The way it should be. The old fashioned way.<br> <br>
+                    That being, an independent and emotional choice based on the delivery of exceptional service and not an enforced incremental charge made when the consumer least expects it.</p>
+            </div>
+        </div>
+        </div>
+
+        <div id="overlay" onclick="showSidebar()">
+        </div>
+
+        <div id="sidebar">
+        <div class="close-btn" onclick="showSidebar()">
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About us</a></li>
+            <li><a href="q-a.html">Q&A</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="images/logo.png" alt="sidebar-img" class="sidebar-img">
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
