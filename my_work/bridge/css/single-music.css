@@ -1,0 +1,280 @@
+:root {
+  --red: #db2027;
+  --dark-red: #db2026da;
+  --menu-red: #ad141a;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-c-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* HEADER SECTION START */
+
+header {
+  border-bottom: solid 1px #e5e5e5;
+  margin: 0 auto;
+  width: 95%;
+  height: 120px;
+}
+
+.brg-menu-icon {
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  background-color: var(--red);
+}
+
+select {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--red);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+/* HEADER SECTION END */
+
+/* ----------------------------------------------------- */
+
+.brg-top-image {
+  width: 1200px;
+  height: 480px;
+  margin: 4rem auto;
+  background-image: url(../images/single-music-top-img.png);
+}
+
+.brg-page-content {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brg-page-title h1 {
+  color: var(--red);
+  font-size: 3.125rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.brg-page-title p {
+  max-width: 670px;
+  margin: 0 auto;
+  color: #000;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.brg-btn {
+  cursor: pointer;
+  width: 130px;
+  height: 50px;
+  background-color: var(--red);
+  margin: 4rem auto;
+  display: grid;
+  place-items: center;
+}
+
+.brg-btn:hover {
+  background-color: var(--menu-red);
+}
+
+.brg-btn a {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* BOTTOM CONTENT SECTION START */
+
+.brg-bottom-content {
+  width: 1200px;
+  margin: 0 auto;
+  border-top: solid 1px #c4c4c4;
+}
+
+.brg-bottom-title {
+  margin-block: 2rem;
+}
+
+.brg-bottom-title h1 {
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+}
+
+.swiper-btns {
+  position: relative;
+  width: 200px;
+  height: 50px;
+}
+
+.swiper-btn-next,
+.swiper-btn-prev {
+  cursor: pointer;
+  width: 49px;
+  height: 49px;
+  border-radius: 5rem;
+  background-color: #f8f8f8;
+}
+
+.swiper-btn-next:hover,
+.swiper-btn-prev:hover {
+  background-color: #c4c4c4;
+}
+.brg-btn-next,
+.brg-btn-prev {
+  filter: invert(22%) sepia(100%) saturate(2326%) hue-rotate(343deg)
+    brightness(85%) contrast(102%);
+  transform: scale(1.5);
+}
+
+.swiper-btn-next:hover .brg-btn-next,
+.swiper-btn-prev:hover .brg-btn-prev {
+  filter: invert(22%) sepia(100%) saturate(2326%) hue-rotate(343deg)
+    brightness(100%) contrast(102%);
+}
+
+.swiper-btn-next {
+  transform: rotate(180deg);
+}
+
+.swiper {
+  overflow: hidden;
+  min-height: 250px;
+}
+
+.brg-card {
+  width: 48%;
+}
+
+.brg-card-img {
+  width: 200px;
+  height: 200px;
+}
+
+.brg-card-img img {
+  width: 200px;
+  height: 200px;
+}
+
+.brg-card-text {
+  flex-direction: column;
+  align-items: flex-start;
+  height: 200px;
+  width: calc(96% - 200px);
+}
+
+.brg-card-text h2 {
+  font-size: 1.875rem;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.brg-card-text p {
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.brg-card-text h3 {
+  color: #404040;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.brg-card-text h4 {
+  color: #c4c4c4;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.brg-card-text a {
+  color: var(--red);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+hr {
+  width: 100%;
+  margin: 0.2rem auto;
+  border: solid #cccccc 1px;
+}
+
+/* BOTTOM CONTENT SECTION END*/
+
+/* ----------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+
+/* FOOTER SECTION START */
+
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  height: 145px;
+  background-color: #000;
+}
+
+.brg-footer-content {
+  flex-direction: column;
+}
+
+.brg-footer-content p {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.brg-footer-content nav {
+  margin-block: 1rem;
+}
+
+.brg-footer-content nav a {
+  font-size: 0.875rem;
+  padding-inline: 1rem;
+  color: #999;
+}
+
+.brg-footer-content nav a:hover {
+  color: #777;
+}
+
+.brg-footer-content .brg-social-links i {
+  color: #fff;
+  font-size: 1.375rem;
+  padding: 1rem;
+}
+
+.brg-footer-content .brg-social-links i:hover {
+  color: #777;
+}
+/* FOOTER SECTION END */
+
+/* ----------------------------------------------------- */

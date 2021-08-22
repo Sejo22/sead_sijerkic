@@ -1,17 +1,8 @@
-const swiper = new Swiper('.slider1', {
-    direction: 'horizontal',
-    loop: true,
-    
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+const swiper = new Swiper('.swiper', {
+  navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
+  },
+  spaceBetween: 50,
+});
   
-
-  const swiper2 = new Swiper('.slider2', {
-    direction: 'horizontal',
-    slidesPerView:5,
-    freeMode: true,
-
-  });

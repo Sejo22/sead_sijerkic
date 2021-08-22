@@ -1,0 +1,273 @@
+:root {
+  --red: #db2027;
+  --dark-red: #db2026da;
+  --menu-red: #ad141a;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-c-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* HEADER SECTION START */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 120px;
+}
+
+.brg-menu-icon {
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  background-color: var(--red);
+}
+
+select {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--red);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+/* HEADER SECTION END */
+
+/* ----------------------------------------------------- */
+
+/* HERO IMAGE START */
+.brg-hero-img {
+  position: relative;
+  background-image: url(../images/music-listing-hero-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 560px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.brg-hero-img h1 {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translateY(-50%);
+  font-weight: 800;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* HERO IMAGE END */
+
+/* ----------------------------------------------------- */
+
+/* PAGE CONTENT START */
+
+.brg-page-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.brg-title-wrapper {
+  position: relative;
+  width: 100%;
+  height: 14rem;
+}
+
+.brg-text-behind {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+.brg-text-behind h1 {
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgba(153, 153, 153, 0.09);
+}
+
+.brg-page-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.brg-page-title h1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  color: #000;
+}
+
+.brg-page-title h3 {
+  color: #999;
+  font: 800;
+  font-size: 1.25rem;
+}
+
+.brg-playlist-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.brg-card-row {
+  margin-top: 4rem;
+  width: 100%;
+  max-height: 200px;
+}
+
+.brg-card {
+  width: 48%;
+}
+
+.brg-card-img {
+  width: 200px;
+  height: 200px;
+}
+
+.brg-card-img img {
+  width: 200px;
+  height: 200px;
+}
+
+.brg-card-text {
+  flex-direction: column;
+  align-items: flex-start;
+  height: 200px;
+  width: calc(96% - 200px);
+}
+
+.brg-card-text h2 {
+  font-size: 1.875rem;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.brg-card-text p {
+  font-size: 0.875rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.brg-card-text h3 {
+  color: #404040;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.brg-card-text h4 {
+  color: #c4c4c4;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.brg-card-text a {
+  color: var(--red);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+hr {
+  width: 100%;
+  margin: 0.2rem auto;
+  border: solid #cccccc 1px;
+}
+
+.brg-btn {
+  cursor: pointer;
+  width: 130px;
+  height: 50px;
+  background-color: var(--red);
+  margin: 4rem auto;
+  display: grid;
+  place-items: center;
+}
+
+.brg-btn a {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.brg-btn:hover {
+  background-color: var(--menu-red);
+}
+/* PAGE CONTENT END */
+
+/* ----------------------------------------------------- */
+
+/* FOOTER SECTION START */
+
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  height: 145px;
+  background-color: #000;
+}
+
+.brg-footer-content {
+  flex-direction: column;
+}
+
+.brg-footer-content p {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.brg-footer-content nav {
+  margin-block: 1rem;
+}
+
+.brg-footer-content nav a {
+  font-size: 0.875rem;
+  padding-inline: 1rem;
+  color: #999;
+}
+
+.brg-footer-content nav a:hover {
+  color: #777;
+}
+
+.brg-footer-content .brg-social-links i {
+  color: #fff;
+  font-size: 1.375rem;
+  padding: 1rem;
+}
+
+.brg-footer-content .brg-social-links i:hover {
+  color: #777;
+}
+/* FOOTER SECTION END */
+
+/* ----------------------------------------------------- */
