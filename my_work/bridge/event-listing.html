@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/show-listing.css">
+    <link rel="stylesheet" href="css/event-listing.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"> 
 
-    <title>Show Listing</title>
+    <title>Event Listing</title>
 </head>
 <body>
 
@@ -43,7 +43,7 @@
     </div>
     <!-- MENU SECTION END -->
     <!-- HEADER SECTION START -->
-
+    
     <!-- HEADER SECTION END -->
 
     <div class="brg-hero-img">
@@ -56,75 +56,83 @@
                 <option value="eng">En</option>
             </select>
         </header>
-        <h1>Podcast</h1>
+        <h1>Events</h1>
     </div>
 
     <!-- PAGE CONTENT SECTION START -->
     <div class="brg-page-content">
         <div class="brg-title-wrapper">
+            <div class="brg-text-behind">
+                <h1>EVENTS</h1>
+            </div>
             <div class="brg-page-title">
-                <h1>Featured / <span>Original</span></h1>
+                <h1>UPCOMING</h1>
+                <h3>MOST ANTICIPATED EVENTS NEAR YOU</h3>
             </div>
         </div>
 
-        <div class="brg-show-single">
-            <img src="images/show-listing-img-1.png" alt="">
+        <div class="brg-event-wrapper flex-c-sb">
+            <div class="brg-card-row flex-c-sb">
+                <div class="brg-event-single">
+                    <img src="images/event-listing-img-1.png" alt="">
+                    <div class="brg-btn-white">
+                        <a href="">Glastonbury Festival</a>
+                        <span>Date: 24 Sep 2021</span>
+                    </div>
+                </div>
 
-            <div class="brg-overlay-text-right flex-c-sb">
-                <h2>BRG-RADIO <br> PRESENTS:</h2>
-                <h1>ILLENIUM</h1>
-                <div class="brg-btn-white">
-                    <a href="#">Listen Now</a>
+                <div class="brg-event-single">
+                    <img src="images/event-listing-img-2.png" alt="">
+                    <div class="brg-btn-white">
+                        <a href="">Hong Kong Live Music Event</a>
+                        <span>Date: 14 Jan 2022</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brg-card-row flex-c-sb">
+                <div class="brg-event-single">
+                    <img src="images/event-listing-img-3.png" alt="">
+                    <div class="brg-btn-white">
+                        <a href="">African Drum Jam (Guinea Style</a>
+                        <span>Date: 2 Feb 2022</span>
+                    </div>
+                </div>
+
+                <div class="brg-event-single">
+                    <img src="images/event-listing-img-4.png" alt="">
+                    <div class="brg-btn-white">
+                        <a href="">Oasis Festival 2021</a>
+                        <span>Date: 19 Jan 2022</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brg-card-row flex-c-sb">
+                <div class="brg-event-single">
+                    <img src="images/event-listing-img-5.png" alt="">
+                    <div class="brg-btn-white">
+                        <a href="">Clockenflap 2021</a>
+                        <span>Date: 24 Mar 2022</span>
+                    </div>
+                </div>
+
+                <div class="brg-event-single">
+                    <img src="images/event-listing-img-6.png" alt="">
+                    <div class="brg-btn-white">
+                        <a href="">Hong Kong Live Music Event</a>
+                        <span>Date: 14 Jan 2022</span>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="brg-show-single-left">
-            <img src="images/show-listing-img-2.png" alt="">
-
-
-            <div class="brg-overlay-text-left flex-c-sb">
-                <h2>BRG-RADIO <br> PRESENTS:</h2>
-                <h1>I need r3hab</h1>
-                <div class="brg-btn-white-left">
-                    <a href="#">Listen Now</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="brg-show-single">
-            <img src="images/show-listing-img-3.png" alt="">
-
-
-            <div class="brg-overlay-text-right">
-                <h2>BRG-RADIO <br> PRESENTS:</h2>
-                <h1>RADIO WONDERLAND</h1>
-                <div class="brg-btn-white">
-                    <a href="#">Listen Now</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="brg-show-single-left">
-            <img src="images/show-listing-img-4.png" alt="">
-
-
-            <div class="brg-overlay-text-left flex-c-sb">
-                <h2>BRG-RADIO <br> PRESENTS:</h2>
-                <h1>JACKED RADIO</h1>
-                <div class="brg-btn-white-left">
-                    <a href="#">Listen Now</a>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="brg-btn">
-            <a href="#">Load more</a>
-        </div>
-
     </div>
+
+    <div class="brg-btn">
+        <a href="#">Load more</a>
+    </div>
+    
+    
     <!-- PAGE CONTENT SECTION END -->
 
 
@@ -149,7 +157,6 @@
         </div>
      </footer>
     <!-- FOOTER SECTION END -->
-
     <script src="app.js"></script>
 
 </body>

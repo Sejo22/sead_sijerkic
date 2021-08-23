@@ -62,6 +62,108 @@ select {
 
 /* ----------------------------------------------------- */
 
+/* ----------------------------------------------------- */
+
+/* MENU SECTION START */
+
+.brg-menu {
+  z-index: 100;
+  position: relative;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 434px;
+  height: 100%;
+  background-color: var(--red);
+  left: -434px;
+}
+
+.brg-menu.active {
+  left: 0;
+}
+
+.brg-menu-toggler {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 3.5%;
+  left: 11%;
+}
+
+.brg-menu-logo {
+  width: 147px;
+  height: 44px;
+}
+
+.brg-menu-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.brg-menu-list {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.brg-menu-item {
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.brg-menu-link {
+  position: relative;
+  font-size: 3.75rem;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+}
+
+.brg-menu-item:hover .brg-menu-link::after {
+  content: "";
+  height: 5px;
+  width: 85%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brg-menu-item:hover .brg-menu-link.active::after {
+  content: "";
+  height: 5px;
+  width: 85%;
+  background-color: var(--menu-red);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brg-menu-link.active {
+  color: var(--menu-red);
+}
+
+.brg-menu .brg-social-links i {
+  color: #fff;
+  font-size: 1.375rem;
+  padding: 1rem;
+}
+
+.brg-menu .brg-social-links i:hover {
+  color: var(--menu-red);
+}
+
+/* MENU SECTION END */
+
+/* ----------------------------------------------------- */
+
 .brg-top-image {
   width: 1200px;
   height: 480px;
@@ -80,9 +182,11 @@ select {
   font-size: 3.125rem;
   text-transform: uppercase;
   font-weight: 800;
+  line-height: 70px;
 }
 
 .brg-page-title p {
+  line-height: 21px;
   max-width: 670px;
   margin: 0 auto;
   color: #000;
@@ -109,6 +213,7 @@ select {
   font-size: 0.875rem;
   font-weight: 600;
   text-align: center;
+  line-height: 21px;
 }
 
 /* BOTTOM CONTENT SECTION START */
@@ -128,6 +233,7 @@ select {
   font-weight: 800;
   text-transform: uppercase;
   font-size: 1.875rem;
+  line-height: 70px;
 }
 
 .swiper-btns {
@@ -193,15 +299,24 @@ select {
 }
 
 .brg-card-text h2 {
+  line-height: 35px;
   font-size: 1.875rem;
   color: var(--red);
   font-weight: 800;
 }
 
 .brg-card-text p {
+  line-height: 21px;
   font-size: 0.875rem;
   color: #000;
   font-weight: 400;
+}
+
+.brg-card-name {
+  line-height: 35px;
+  border-top: solid #cccccc 1px;
+  border-bottom: solid #cccccc 1px;
+  width: 100%;
 }
 
 .brg-card-text h3 {
@@ -220,12 +335,7 @@ select {
   color: var(--red);
   font-size: 0.875rem;
   font-weight: 600;
-}
-
-hr {
-  width: 100%;
-  margin: 0.2rem auto;
-  border: solid #cccccc 1px;
+  line-height: 21px;
 }
 
 /* BOTTOM CONTENT SECTION END*/

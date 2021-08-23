@@ -14,13 +14,41 @@
     <title>Music Listing</title>
 </head>
 <body>
+
+    <!-- MENU SECTION START -->
+    <div class="brg-menu" id="menu">
+        <div class="brg-menu-toggler" onclick="openMenu()">
+            <img src="images/MenuIcon 1.png" alt="menu-icon">
+        </div>
+        <div class="brg-menu-logo">
+            <a href="#"><img src="images/menu-logo.png" alt=""></a>
+        </div>
+        <nav class="brg-menu-nav">
+            <ul class="brg-menu-list">
+                <li class="brg-menu-item"><a class="brg-menu-link" href="single-news.html">News</a></li>
+                <li class="brg-menu-item"><a class="brg-menu-link" href="music-listing.html">Music</a></li>
+                <li class="brg-menu-item"><a class="brg-menu-link" href="show-listing.html">Show</a></li>
+                <li class="brg-menu-item"><a class="brg-menu-link active" href="event-listing.html">Events</a></li>
+                <li class="brg-menu-item"><a class="brg-menu-link" href="#">Artist</a></li>
+            </ul>
+        </nav>
+        <div class="brg-social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-weibo"></i></a>
+            <a href="#"><i class="fab fa-weixin"></i></a>
+            <a href="#"><i class="fas fa-paw"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <!-- MENU SECTION END -->
     <!-- HEADER SECTION START -->
     
     <!-- HEADER SECTION END -->
 
     <div class="brg-hero-img">
         <header class="flex-c-sb ">
-            <div class="brg-menu-icon flex-c">
+            <div class="brg-menu-icon flex-c" onclick="openMenu()">
                 <img src="images/MenuIcon 1.png" alt="menu-icon">
             </div>
             <img src="images/BRG-Top-Logo.png" alt="Logo">
@@ -54,10 +82,10 @@
                     <div class="brg-card-text flex-c-sb">
                         <h2>CHINA HIT</h2>
                         <p>Your best source for new and classic Chinese language hits. We have the latest songs and best mix for all of China!</p>
-                        <hr>
-                        <h3>HEARTBEAT</h3>
-                        <h4>JANE</h4>
-                        <hr>
+                        <div class="brg-card-name">
+                            <h3>HEARTBEAT</h3>
+                            <h4>JANE</h4>
+                         </div>
                         <a href="#">Play music ></a>
                     </div>
                 </div>
@@ -69,10 +97,10 @@
                     <div class="brg-card-text flex-c-sb">
                         <h2>ASIA HIT</h2>
                         <p>Your best source for new and classic Chinese language hits. We have the latest songs and best mix for all of China!</p>
-                        <hr>
-                        <h3>HEARTBEAT</h3>
-                        <h4>JANE</h4>
-                        <hr>
+                        <div class="brg-card-name">
+                            <h3>HEARTBEAT</h3>
+                            <h4>JANE</h4>
+                         </div>
                         <a href="#">Play music ></a>
                     </div>
                 </div>
@@ -88,10 +116,10 @@
                     <div class="brg-card-text flex-c-sb">
                         <h2>TOP50</h2>
                         <p>Your best source for new and classic Chinese language hits. We have the latest songs and best mix for all of China!</p>
-                        <hr>
-                        <h3>HEARTBEAT</h3>
-                        <h4>JANE</h4>
-                        <hr>
+                        <div class="brg-card-name">
+                            <h3>HEARTBEAT</h3>
+                            <h4>JANE</h4>
+                         </div>
                         <a href="#">Play music ></a>
                     </div>
                 </div>
@@ -103,10 +131,10 @@
                     <div class="brg-card-text flex-c-sb">
                         <h2>EDM / CLUB</h2>
                         <p>Your best source for new and classic Chinese language hits. We have the latest songs and best mix for all of China!</p>
-                        <hr>
-                        <h3>HEARTBEAT</h3>
-                        <h4>JANE</h4>
-                        <hr>
+                        <div class="brg-card-name">
+                            <h3>HEARTBEAT</h3>
+                            <h4>JANE</h4>
+                         </div>
                         <a href="#">Play music ></a>
                     </div>
                 </div>
@@ -122,10 +150,10 @@
                     <div class="brg-card-text flex-c-sb">
                         <h2>80’S / 90’S</h2>
                         <p>Your best source for new and classic Chinese language hits. We have the latest songs and best mix for all of China!</p>
-                        <hr>
-                        <h3>HEARTBEAT</h3>
-                        <h4>JANE</h4>
-                        <hr>
+                         <div class="brg-card-name">
+                            <h3>HEARTBEAT</h3>
+                            <h4>JANE</h4>
+                         </div>
                         <a href="#">Play music ></a>
                     </div>
                 </div>
@@ -137,10 +165,10 @@
                     <div class="brg-card-text flex-c-sb">
                         <h2>ROCK</h2>
                         <p>Your best source for new and classic Chinese language hits. We have the latest songs and best mix for all of China!</p>
-                        <hr>
-                        <h3>HEARTBEAT</h3>
-                        <h4>JANE</h4>
-                        <hr>
+                        <div class="brg-card-name">
+                            <h3>HEARTBEAT</h3>
+                            <h4>JANE</h4>
+                         </div>
                         <a href="#">Play music ></a>
                     </div>
                 </div>
@@ -179,5 +207,8 @@
         </div>
      </footer>
     <!-- FOOTER SECTION END -->
+
+    <script src="app.js"></script>
+
 </body>
 </html>

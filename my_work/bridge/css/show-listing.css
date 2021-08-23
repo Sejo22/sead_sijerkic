@@ -64,6 +64,108 @@ select {
 
 /* ----------------------------------------------------- */
 
+/* ----------------------------------------------------- */
+
+/* MENU SECTION START */
+
+.brg-menu {
+  z-index: 100;
+  position: relative;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 434px;
+  height: 100%;
+  background-color: var(--red);
+  left: -434px;
+}
+
+.brg-menu.active {
+  left: 0;
+}
+
+.brg-menu-toggler {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 3.5%;
+  left: 11%;
+}
+
+.brg-menu-logo {
+  width: 147px;
+  height: 44px;
+}
+
+.brg-menu-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.brg-menu-list {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.brg-menu-item {
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.brg-menu-link {
+  position: relative;
+  font-size: 3.75rem;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+}
+
+.brg-menu-item:hover .brg-menu-link::after {
+  content: "";
+  height: 5px;
+  width: 85%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brg-menu-item:hover .brg-menu-link.active::after {
+  content: "";
+  height: 5px;
+  width: 85%;
+  background-color: var(--menu-red);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brg-menu-link.active {
+  color: var(--menu-red);
+}
+
+.brg-menu .brg-social-links i {
+  color: #fff;
+  font-size: 1.375rem;
+  padding: 1rem;
+}
+
+.brg-menu .brg-social-links i:hover {
+  color: var(--menu-red);
+}
+
+/* MENU SECTION END */
+
+/* ----------------------------------------------------- */
+
 /* HERO IMAGE START */
 .brg-hero-img {
   position: relative;
@@ -76,6 +178,7 @@ select {
 }
 
 .brg-hero-img h1 {
+  line-height: 70px;
   position: absolute;
   top: 50%;
   left: 12%;
@@ -101,19 +204,6 @@ select {
   height: 14rem;
 }
 
-.brg-text-behind {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-block;
-}
-.brg-text-behind h1 {
-  font-size: 10rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: rgba(153, 153, 153, 0.09);
-}
-
 .brg-page-title {
   width: 100%;
   position: absolute;
@@ -124,6 +214,7 @@ select {
 }
 
 .brg-page-title h1 {
+  line-height: 70px;
   text-transform: uppercase;
   font-size: 3.75rem;
   font-weight: 800;
@@ -133,12 +224,31 @@ select {
 .brg-page-title span {
   color: #ccc;
 }
-.brg-show-single {
+.brg-show-single,
+.brg-show-single-left {
   width: 100%;
   height: 480px;
   position: relative;
   overflow: hidden;
   margin: 4rem auto;
+}
+
+.brg-show-single::before,
+.brg-show-single-left::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 39%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: skewX(-10deg);
+  transform-origin: bottom left;
+}
+
+.brg-show-single-left::after {
+  left: 0;
+  transform: skewX(10deg);
 }
 .brg-show-single img {
   width: 1200px;
@@ -169,6 +279,7 @@ select {
 }
 
 .brg-overlay-text-right h2 {
+  line-height: 35px;
   color: var(--red);
   font-weight: 800;
   font-size: 1.875rem;
@@ -177,6 +288,7 @@ select {
 .brg-overlay-text-right h1 {
   color: #fff;
   font-size: 2.5rem;
+  line-height: 70px;
 }
 /* ---- */
 
@@ -204,6 +316,7 @@ select {
 }
 
 .brg-overlay-text-left h2 {
+  line-height: 35px;
   text-transform: uppercase;
   color: var(--red);
   font-weight: 800;
@@ -211,22 +324,48 @@ select {
 }
 
 .brg-overlay-text-left h1 {
+  line-height: 70px;
   text-transform: uppercase;
   color: #fff;
   font-size: 2.5rem;
 }
 
 /* ------------------------------ */
-.brg-btn-white {
+.brg-btn-white,
+.brg-btn-white-left {
   cursor: pointer;
-  width: 120px;
+  width: 100px;
   height: 30px;
   background-color: #fff;
   display: grid;
   place-items: center;
+  position: relative;
 }
 
-.brg-btn-white a {
+.brg-btn-white::before,
+.brg-btn-white-left::after {
+  z-index: -1;
+  position: absolute;
+  display: block;
+  transform-origin: top left;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: skew(-10deg);
+}
+
+.brg-btn-white-left::after {
+  right: 0;
+  transform-origin: top right;
+  transform: skewX(10deg);
+}
+
+.brg-btn-white a,
+.brg-btn-white-left a {
+  line-height: 18px;
   color: var(--red);
   font-size: 0.75rem;
   font-weight: 800;
