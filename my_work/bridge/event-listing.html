@@ -17,38 +17,45 @@
 
     <!-- MENU SECTION START -->
     <div class="brg-menu" id="menu">
-        <div class="brg-menu-toggler" onclick="openMenu()">
-            <img src="images/MenuIcon 1.png" alt="menu-icon">
-        </div>
-        <div class="brg-menu-logo">
-            <a href="#"><img src="images/menu-logo.png" alt=""></a>
-        </div>
-        <nav class="brg-menu-nav">
-            <ul class="brg-menu-list">
-                <li class="brg-menu-item"><a class="brg-menu-link" href="single-news.html">News</a></li>
-                <li class="brg-menu-item"><a class="brg-menu-link" href="music-listing.html">Music</a></li>
-                <li class="brg-menu-item"><a class="brg-menu-link" href="show-listing.html">Show</a></li>
-                <li class="brg-menu-item"><a class="brg-menu-link active" href="event-listing.html">Events</a></li>
-                <li class="brg-menu-item"><a class="brg-menu-link" href="#">Artist</a></li>
-            </ul>
-        </nav>
-        <div class="brg-social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-weibo"></i></a>
-            <a href="#"><i class="fab fa-weixin"></i></a>
-            <a href="#"><i class="fas fa-paw"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="brg-menu-content">
+            <div class="brg-menu-top">
+                <div class="brg-menu-toggler" >
+                    <img src="images/MenuIcon 1.png" alt="menu-icon">
+                </div>
+    
+                <div class="brg-menu-logo">
+                    <a href="#"><img src="images/menu-logo.png" alt=""></a>
+                </div>
+    
+                <div class="empty">
+                </div>
+            </div>
+            
+            <nav class="brg-menu-nav">
+                <ul class="brg-menu-list">
+                    <li class="brg-menu-item"><a class="brg-menu-link" href="single-news.html">News</a></li>
+                    <li class="brg-menu-item"><a class="brg-menu-link" href="music-listing.html">Music</a></li>
+                    <li class="brg-menu-item"><a class="brg-menu-link" href="show-listing.html">Show</a></li>
+                    <li class="brg-menu-item"><a class="brg-menu-link active" href="event-listing.html">Events</a></li>
+                    <li class="brg-menu-item"><a class="brg-menu-link" href="#">Artist</a></li>
+                </ul>
+            </nav>
+            <div class="brg-social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-weibo"></i></a>
+                <a href="#"><i class="fab fa-weixin"></i></a>
+                <a href="#"><i class="fas fa-paw"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </div>
     <!-- MENU SECTION END -->
-    <!-- HEADER SECTION START -->
-    
-    <!-- HEADER SECTION END -->
 
+    <!-- HEADER SECTION START -->
     <div class="brg-hero-img">
         <header class="flex-c-sb ">
-            <div class="brg-menu-icon flex-c" onclick="openMenu()">
+            <div class="brg-menu-icon flex-c">
                 <img src="images/MenuIcon 1.png" alt="menu-icon">
             </div>
             <img src="images/BRG-Top-Logo.png" alt="Logo">
@@ -58,6 +65,9 @@
         </header>
         <h1>Events</h1>
     </div>
+    <!-- HEADER SECTION END -->
+
+   
 
     <!-- PAGE CONTENT SECTION START -->
     <div class="brg-page-content">
@@ -138,7 +148,7 @@
 
      <!-- FOOTER SECTION START -->
      <footer class="flex-c">
-        <div class="brg-footer-content flex-c">
+        <div class="brg-footer-content flex-c-sb">
             <p>2021© Bridge</p>
             <nav>
                 <a href="#">GENERAL ENQUIRIES</a>
@@ -157,7 +167,10 @@
         </div>
      </footer>
     <!-- FOOTER SECTION END -->
-    <script src="app.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script src="menuSlide.js"></script>
 
 </body>
 </html>
