@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --blue: #03658c;
+  --gray: #808080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.blink {
+  animation: blinker 2s linear infinite;
+  -moz-animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* HEADER SECTION START */
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 15px 11px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 15px 11px 0px rgba(0, 0, 0, 0.09);
+  transition: ease all 0.3s;
+}
+
+header {
+  z-index: 10;
+  background-color: #fff;
+  min-height: 120px;
+  border-bottom: solid 1px #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out all 0.3s;
+}
+
+header nav {
+  min-width: 1200px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .logo img {
+  max-height: 60px;
+  width: auto;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 4rem;
+}
+
+header nav ul li a {
+  color: var(--gray);
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: var(--blue);
+}
+
+/* HEADER SECTION END */
+
+/* INTRO SECTION START */
+.intro {
+  margin: 0 auto;
+  height: calc(100vh - 120px);
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.page-text {
+  width: 45%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-text h1 {
+  font-size: 4rem;
+  color: #242424;
+}
+
+.page-text p {
+  font-size: 1.25rem;
+  line-height: 125%;
+  color: #aaaaaa;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--blue);
+  width: 250px;
+  height: 50px;
+  border-radius: 5rem;
+  display: grid;
+  transition: ease-in-out 0.2s;
+  place-items: center;
+}
+
+.btn:hover {
+  background-color: #0091ca;
+  transition: ease-in-out 0.2s;
+}
+
+.btn a {
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.page-img {
+  width: 50%;
+  height: calc(100vh - 150px);
+  background-image: url(../images/intro-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.scroll-down {
+  background-color: var(--blue);
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  place-items: center;
+}
+
+.scroll-down img {
+  width: 40px;
+  height: auto;
+}
+
+/* INTRO SECTION END */
+
+/* ABOUT SECTION START */
+.about {
+  margin: 4rem auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.about .page-text {
+  height: 550px;
+}
+
+.about .page-text h1,
+.section-title {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.about .page-text p {
+  color: #474747;
+}
+/* ABOUT SECTION END */
+
+/* OUR TEAM SECTION START */
+.section-title {
+  text-align: center;
+  font-size: 4rem;
+  margin: 4rem 0;
+}
+
+.cards {
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  background-color: #03658c;
+  transition: ease-in-out all 0.2s;
+}
+
+.card1 {
+  background-image: url(../images/team-img1.jpg);
+  background-size: cover;
+}
+.card2 {
+  background-image: url(../images/team-img1.jpg);
+  background-size: cover;
+}
+.card3 {
+  background-image: url(../images/team-img1.jpg);
+  background-size: cover;
+}
+.card-hover {
+  background-image: linear-gradient(transparent, #03658c);
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  opacity: 0;
+  transition: ease-in-out all 0.4s;
+  position: relative;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.card:hover .card-hover {
+  opacity: 1;
+  transition: ease-in-out all 0.4s;
+}
+
+.card-hover h1 {
+  color: #eeeeee;
+  font-size: 1.75rem;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.card-hover h3 {
+  color: #bebebe;
+  font-size: 1.5rem;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.card-hover h1,
+.card-hover h3 {
+  cursor: default;
+  text-align: center;
+}
+/* OUR TEAM SECTION END */
+
+.partners {
+  width: 1100px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner {
+  background-color: #dbdbdb;
+  width: 150px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+}
+.partner:hover {
+  background-color: var(--gray);
+}
+
+.partner img {
+  width: 130px;
+  height: 20px;
+}
+
+footer {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #242424;
+}
+
+.footer-content {
+  text-align: center;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-content p,
+footer nav a,
+.social-links i {
+  padding: 0 1rem;
+  color: #f2f2f2;
+}
+
+.social-links i {
+  font-size: 1.25rem;
+}
+
+footer nav a:hover,
+.social-links i:hover {
+  color: #808080;
+}
