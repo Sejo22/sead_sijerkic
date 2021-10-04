@@ -20,6 +20,9 @@ a {
 .blink {
   animation: blinker 2s linear infinite;
   -moz-animation: blinker 2s linear infinite;
+  -ms-animation: blinker 2s linear infinite;
+  -o-animation: blinker 2s linear infinite;
+  -webkit-animation: blinker 2s linear infinite;
 }
 
 @keyframes blinker {
