@@ -7,3 +7,16 @@ $(window).scroll(function(){
     }
 
 });
+
+const navToggler = document.querySelector('.navbar-toggler');
+let navOpen = false;
+navToggler.addEventListener('click', () => {
+    if (!navOpen) {
+        navToggler.classList.add('open');
+        navOpen = true;
+    }
+    else {
+        navToggler.classList.remove('open');
+        navOpen = false;
+    }
+});
