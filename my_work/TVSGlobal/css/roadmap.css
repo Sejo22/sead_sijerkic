@@ -10,6 +10,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+*::-webkit-scrollbar {
+  width: 0.4vw;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #cccccc;
 }
 
 a {
@@ -40,9 +50,10 @@ a {
 }
 
 header {
-  z-index: 10;
+  z-index: 120;
   background-color: #fff;
-  min-height: 120px;
+  height: 120px;
+  width: 100%;
   border-bottom: solid 1px #dbdbdb;
   display: flex;
   align-items: center;
@@ -51,15 +62,15 @@ header {
 }
 
 header nav {
-  min-width: 1200px;
-  min-height: 120px;
+  width: 1200px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 header nav .logo img {
-  max-height: 60px;
+  height: 60px;
   width: auto;
 }
 
@@ -69,7 +80,7 @@ header nav ul {
 
 header nav ul li {
   display: inline;
-  margin-left: 4rem;
+  padding-left: 4rem;
 }
 
 header nav ul li a {
@@ -82,6 +93,56 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li a.active {
   color: var(--blue);
+}
+
+.navbar-toggler {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin-right: 1rem;
+  display: none;
+}
+
+.navbar-toggle {
+  width: 40px;
+  height: 3px;
+  background: #242424;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-toggle::before,
+.navbar-toggle::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #242424;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-toggle::before {
+  transform: translateY(-13px);
+}
+
+.navbar-toggle::after {
+  transform: translateY(13px);
+}
+
+.navbar-toggler.open .navbar-toggle {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.navbar-toggler.open .navbar-toggle::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.navbar-toggler.open .navbar-toggle::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 /* HEADER SECTION END */
@@ -114,19 +175,91 @@ header nav ul li a.active {
   line-height: 75px;
   text-transform: uppercase;
 }
-
-section {
-  height: 100vh;
-  display: grid;
-  place-items: center;
+.roadmap {
+  margin: 2rem auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-section h1 {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 5rem;
+.roadmap-row {
+  position: relative;
+  margin: 1.25rem auto;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 0px 15px 11px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
 }
 
+.roadmap-col,
+.col-title {
+  height: 100%;
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-title {
+  background-color: var(--blue);
+  color: #f2f2f2;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.c-title2 {
+  background-color: #a33434;
+}
+.c-title3 {
+  background-color: #34a368;
+}
+
+.c-title4 {
+  background-color: #7134a3;
+}
+
+.col-items {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  padding: 1rem;
+}
+.col-item {
+  padding: 0.75rem;
+  margin: 0.25rem 0.5rem;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  position: relative;
+}
+.col-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: var(--blue);
+  border-radius: 5px 0 0 5px;
+}
+
+.c-item2::before {
+  background-color: #a33434;
+}
+.c-item3::before {
+  background-color: #34a368;
+}
+.c-item4::before {
+  background-color: #7134a3;
+}
 /* FOOTER SECTION START */
 
 footer {
@@ -170,3 +303,79 @@ footer nav a:hover,
 }
 
 /* FOOTER SECTION END */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0 1rem;
+  }
+  header nav ul {
+    z-index: 10;
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: -400px;
+    display: block;
+    transition: ease-in 0.3s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  header nav ul.open {
+    right: 0;
+  }
+  .fixed-position {
+    position: fixed;
+  }
+
+  header nav ul li {
+    padding: 3rem 0;
+    margin: 0;
+  }
+
+  header nav ul li a {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    display: flex;
+  }
+  .roadmap {
+    width: 100%;
+  }
+
+  .roadmap-row {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .col-title {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 100px;
+  }
+  .roadmap-col {
+    width: 100%;
+  }
+  .footer-content {
+    height: 75%;
+  }
+
+  .footer-content nav {
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content nav a {
+    padding: 0.5rem 0;
+  }
+}

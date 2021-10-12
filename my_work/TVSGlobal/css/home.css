@@ -10,6 +10,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+*::-webkit-scrollbar {
+  width: 0.4vw;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #cccccc;
 }
 
 a {
@@ -18,11 +28,22 @@ a {
 }
 
 .blink {
-  animation: blinker 2s linear infinite;
+  -webkit-animation: blinker 2s linear infinite !important;
   -moz-animation: blinker 2s linear infinite;
   -ms-animation: blinker 2s linear infinite;
   -o-animation: blinker 2s linear infinite;
-  -webkit-animation: blinker 2s linear infinite;
+  animation: blinker 2s linear infinite;
+}
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes blinker {
@@ -73,7 +94,7 @@ header nav ul {
 
 header nav ul li {
   display: inline;
-  margin-left: 4rem;
+  padding-left: 4rem;
 }
 
 header nav ul li a {
@@ -92,12 +113,12 @@ header nav ul li a.active {
   position: relative;
   width: 40px;
   height: 30px;
-  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   margin-right: 1rem;
+  display: none;
 }
 
 .navbar-toggle {
@@ -213,8 +234,10 @@ header nav ul li a.active {
 }
 
 .scroll-down img {
-  width: 40px;
-  height: auto;
+  width: 50px;
+  height: 50px;
+  filter: invert(100%) sepia(4%) saturate(7487%) hue-rotate(254deg)
+    brightness(111%) contrast(100%);
 }
 
 /* INTRO SECTION END */
@@ -372,7 +395,7 @@ footer {
   align-items: center;
 }
 .footer-content p,
-footer nav a,
+.footer-content nav a,
 .social-links i {
   padding: 0 1rem;
   color: #f2f2f2;
@@ -391,9 +414,43 @@ footer nav a:hover,
   nav {
     padding: 0 1rem;
   }
-  nav ul {
-    display: none;
+  header nav ul {
+    z-index: 10;
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: -800px;
+    display: block;
+    transition: ease-in 0.3s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
   }
+  header nav ul.open {
+    right: 0;
+  }
+  .fixed-position {
+    position: fixed;
+  }
+
+  header nav ul li {
+    padding: 3rem 0;
+    margin: 0;
+  }
+
+  header nav ul li a {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    display: flex;
+  }
+
   .intro,
   .cards,
   .about {
@@ -407,11 +464,16 @@ footer nav a:hover,
     margin: 1rem 0;
   }
 
+  .intro {
+    justify-content: center;
+  }
+
   .intro .page-img {
-    height: 400px;
+    height: calc(100vh - 120px);
     position: absolute;
     z-index: -10;
   }
+
   .intro .page-img::before {
     content: "";
     width: 100%;
@@ -434,6 +496,11 @@ footer nav a:hover,
     font-size: 1.125rem;
   }
 
+  .about .page-img {
+    height: 200px;
+    background-position: bottom;
+  }
+
   .about .page-text h1,
   .section-title {
     color: #242424;
@@ -444,6 +511,10 @@ footer nav a:hover,
     height: auto;
   }
 
+  .card {
+    width: 330px;
+  }
+
   .card,
   .partner {
     margin: 0.5rem;
@@ -452,5 +523,21 @@ footer nav a:hover,
   .partners {
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer-content {
+    height: 75%;
+  }
+
+  .footer-content nav {
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content nav a {
+    padding: 0.5rem 0;
   }
 }
