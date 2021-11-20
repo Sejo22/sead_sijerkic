@@ -1,0 +1,166 @@
+:root {
+  --dark-blue: #031e38;
+  --light-blue: #3480bd;
+}
+@media all and (max-width: 768px) {
+  .sections {
+    padding-top: 100px;
+  }
+  .scroll-lock {
+    overflow: hidden;
+  }
+  .nav-toggler {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .nav-toggler span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 4px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav-toggler span::before,
+  .nav-toggler span::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav-toggler span::before {
+    transform: translateY(-13px);
+  }
+
+  .nav-toggler span::after {
+    transform: translateY(13px);
+  }
+
+  .nav-toggler.open span {
+    transform: translateX(-50px);
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav-toggler.open span::before {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .nav-toggler.open span::after {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  .inner-header nav {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    pointer-events: none;
+  }
+
+  .inner-header nav ul {
+    background: #f2f2f2;
+    display: flex;
+    transition: all 0.3s ease-in;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: -800px;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .inner-header nav ul.open {
+    right: 0;
+    opacity: 1;
+    pointer-events: visible;
+  }
+
+  .inner-header nav ul li {
+    margin: 1rem auto;
+    padding: 1rem 0;
+  }
+
+  .inner-header nav ul li a {
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+  }
+  .inner-header nav ul li a:hover {
+    opacity: 0.75;
+  }
+
+  .home-content {
+    width: 95%;
+  }
+
+  .home-content h1 {
+    font-size: 3rem;
+    line-height: 55px;
+  }
+
+  .home-content p {
+    font-size: 1.375rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+  }
+  .inner-section,
+  .products-section .inner-section,
+  .case-studies-section .inner-section {
+    align-items: center;
+    flex-direction: column;
+    width: 97%;
+  }
+
+  .inner-section-left,
+  .inner-section-right {
+    width: 97%;
+  }
+  .section-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+  }
+
+  .section-text {
+    padding: 0.35rem;
+    width: 100%;
+  }
+
+  .section-text p,
+  .section-text ul li {
+    font-size: 1.125rem;
+    padding: 0.5rem;
+  }
+
+  .c-form,
+  form {
+    width: 100%;
+  }
+  .form-group {
+    width: 97%;
+  }
+}
