@@ -13,14 +13,16 @@
 }
 
 .slide {
-  transform: translateY(-300px);
+  transform: translateX(-300px);
   opacity: 0;
   transition: all ease 1.5s;
   z-index: -100;
+  pointer-events: none;
+  animation-delay: 5s;
 }
 
 .slide.active {
-  transform: translateY(0);
+  transform: translateX(0);
   transition: all ease 1.5s;
   opacity: 1;
 }
