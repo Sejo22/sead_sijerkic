@@ -2,7 +2,7 @@
   --dark-blue: #031e38;
   --light-blue: #3480bd;
 }
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .sections {
     padding-top: 100px;
   }
@@ -162,5 +162,28 @@
   }
   .form-group {
     width: 97%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .inner-section,
+  .products-section .inner-section,
+  .case-studies-section .inner-section {
+    flex-direction: column;
+    width: 80%;
+  }
+  .inner-section-left,
+  .inner-section-right {
+    width: 100%;
+    margin: 1rem;
+  }
+  .c-form {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  .form-group {
+    width: 100%;
   }
 }

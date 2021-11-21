@@ -60,3 +60,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// SLIDE ANIMATIONS
+
+window.addEventListener('scroll', () => {
+   const slide = document.querySelectorAll('.slide');
+
+   for(let i = 0; i < slide.length; i++) {
+       let windowWidth = window.innerHeight;
+       let revealSlide = slide[i].getBoundingClientRect().top;
+       const revealPoint = 100;
+
+       if(revealSlide < windowWidth - revealPoint) {
+           slide[i].classList.add('active');
+       }
+   }
+});
