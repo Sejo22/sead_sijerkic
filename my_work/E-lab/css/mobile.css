@@ -94,6 +94,7 @@
     right: 0;
     opacity: 1;
     pointer-events: visible;
+    overflow-y: scroll;
   }
 
   .inner-header nav ul li {
