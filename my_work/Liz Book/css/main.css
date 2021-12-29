@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  background: radial-gradient(#0f3c37, #040f0e);
+  font-family: "Poppins", sans-serif;
+  color: #f2f2f2;
+}
+
+.container {
+  min-height: 100vh;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.left-side {
+  padding: 3rem;
+}
+.book-cover {
+  position: relative;
+  width: 500px;
+}
+
+.book-cover img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+}
+
+.circle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #186159;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  border: solid #f2f2f2 3px;
+}
+
+.circle h2,
+.circle p {
+  padding: 0.5rem;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.book-info-mobile {
+  display: none;
+}
+
+.right-side {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+.title {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: "Fjalla One", sans-serif;
+  padding: 1rem 0;
+}
+
+.book-name {
+  line-height: 75px;
+  font-size: 4.5rem;
+  padding: 1rem 0;
+  font-size: 700;
+}
+
+.book-name span {
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+
+.right-side h2 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+.book-info {
+  font-size: 1.5rem;
+  padding: 1rem 0 2rem 0;
+}
+
+.btn {
+  width: 500px;
+  height: 75px;
+  border-radius: 10rem;
+  background-color: #186159;
+  border: #f2f2f2 solid 2px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.btn p {
+  text-align: center;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.btn:hover {
+  background-color: #0f3c37;
+}
