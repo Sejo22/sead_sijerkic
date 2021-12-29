@@ -30,6 +30,11 @@
     padding: 3rem 1rem;
   }
 
+  .book-cover img {
+      width: 100%;
+      min-height: 100%;
+  }
+
   .book-info-mobile {
     display: block;
     padding: 2rem 0;
