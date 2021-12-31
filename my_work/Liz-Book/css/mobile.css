@@ -14,6 +14,19 @@
     align-items: center;
   }
 
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .left-side .btn {
+    position: relative;
+    transform: translateX(0%);
+    left: 0;
+    margin-top: 2rem;
+  }
+
   .circle {
     width: 150px;
     height: 150px;
@@ -31,8 +44,8 @@
   }
 
   .book-cover img {
-      width: 100%;
-      min-height: 100%;
+    width: 100%;
+    min-height: 100%;
   }
 
   .book-info-mobile {
@@ -73,6 +86,32 @@
 
   .book-info {
     display: none;
+  }
+
+  .sections,
+  .author-info p,
+  .author-info p span {
+    text-align: center;
+  }
+
+  .author-info p span {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .author-info p {
+    font-size: 1.125rem;
+  }
+
+  .author-img {
+    width: 95%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
   }
 }
 
