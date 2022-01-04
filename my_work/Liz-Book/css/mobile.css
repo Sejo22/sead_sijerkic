@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@300;400;700&display=swap");
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+    flex-direction: column-reverse;
+  }
+  .right-side,
+  .left-side {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .left-side .btn {
+    position: relative;
+    transform: translateX(0%);
+    left: 0;
+    margin-top: 2rem;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle h2,
+  .circle p {
+    font-size: 1.125rem;
+    line-height: 20px;
+  }
+
+  .book-cover {
+    width: 100%;
+    padding: 3rem 1rem;
+  }
+
+  .book-cover img {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .book-info-mobile {
+    color: #f2f2f2;
+    display: block;
+    padding: 2rem 0;
+  }
+  .title {
+    width: 100%;
+  }
+
+  .book-name {
+    font-size: 3rem;
+    line-height: 50px;
+    padding: 1rem;
+  }
+
+  .book-name span {
+    font-size: 2.5rem;
+    line-height: 40px;
+    letter-spacing: 0.5rem;
+    padding: 0;
+  }
+
+  .right-side h2 {
+    font-size: 1.5rem;
+    line-height: 25px;
+    padding: 0 0 2rem 0;
+  }
+
+  .btn {
+    width: 100%;
+    height: 50px;
+  }
+  .btn p {
+    font-size: 1.125rem;
+  }
+
+  .book-info {
+    display: none;
+  }
+
+  .sections,
+  .author-info p,
+  .author-info p span {
+    text-align: center;
+  }
+
+  .author-info p span {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .author-info p {
+    font-size: 1.125rem;
+  }
+
+  .author-img {
+    width: 95%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+@media all and (min-width: 491px) and (max-width: 768px) {
+  .book-cover img {
+    width: 80%;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .book-name {
+    font-size: 4rem;
+    line-height: 70px;
+    padding: 1rem;
+  }
+
+  .book-name span {
+    font-size: 3rem;
+    line-height: 50px;
+    letter-spacing: 0.5rem;
+    padding: 0;
+  }
+
+  .btn {
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}

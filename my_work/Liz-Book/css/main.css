@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  background: radial-gradient(#231f20, #1b1b27);
+  font-family: "Poppins", sans-serif;
+  color: #d6b45e;
+  overflow-x: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.left-side {
+  position: relative;
+  padding: 3rem;
+}
+.book-cover {
+  position: relative;
+  width: 500px;
+}
+
+.book-cover img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+}
+
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #231f20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  border: solid #f2f2f2 3px;
+}
+
+.circle h2,
+.circle p {
+  color: #f2f2f2;
+  padding: 0.5rem;
+  display: inline-block;
+  line-height: 35px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.right-side .mailing-btn {
+  width: 250px;
+  height: 50px;
+  margin: 1rem 0;
+}
+.right-side .mailing-btn p {
+  font-size: 1.125rem;
+}
+
+.book-info-mobile {
+  display: none;
+}
+
+.right-side {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+.title {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: "Fjalla One", sans-serif;
+  padding: 1rem 0;
+  color: #f2f2f2;
+}
+
+.book-name {
+  text-transform: uppercase;
+  line-height: 75px;
+  font-size: 4.5rem;
+  padding: 1rem 0;
+  font-size: 700;
+}
+
+.book-name span {
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+
+.right-side h2 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+.book-info {
+  font-size: 1.5rem;
+  padding: 1rem 0 2rem 0;
+  color: #f2f2f2;
+}
+
+.btn {
+  width: 500px;
+  height: 75px;
+  border-radius: 10rem;
+  background-color: #231f20;
+  border: #f2f2f2 solid 2px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.btn p {
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.btn:hover {
+  background-color: #422727;
+}
+
+.swiper {
+  min-height: 500px;
+  margin: 2rem auto;
+}
+
+.swiper-slide {
+  width: 400px;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-slide h2 {
+  padding: 0.5rem 0;
+}
+
+.podcast-info {
+  color: #f2f2f2;
+  border-top: solid 1px #777;
+  border-bottom: solid 1px #777;
+  padding: 1rem 0;
+}
+
+.play {
+  margin: 1rem 0;
+  border: #f2f2f2 solid 2px;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  color: #231f20;
+  transition: all ease 0.2s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.play:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+section {
+  width: 95%;
+  margin: 2rem auto;
+}
+
+.author-info {
+  margin: 2rem 0;
+}
+
+.author-img {
+  display: inline;
+  width: 400px;
+  float: left;
+  padding: 0 2rem 0 0;
+  shape-outside: image();
+}
+.author-img img {
+  width: 100%;
+}
+
+.section-container p {
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #f2f2f2;
+}
+
+.section-container p span {
+  color: #d6b45e;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f2f2f2 !important;
+  background-color: #231f20;
+  border-radius: 100rem;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+}
