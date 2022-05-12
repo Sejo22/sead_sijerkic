@@ -1,245 +1,29 @@
 #EXTM3U
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Al Jezzera Balkans
-http://new-pro.tv:8080/Fernando/123321/21419?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Alfa TV
-http://new-pro.tv:8080/Fernando/123321/28421?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Alternativna
-http://new-pro.tv:8080/Fernando/123321/55691?checkedby:iptvcat.com
-#EXTINF:-1 tvg-country="BA" tvg-logo="" group-title="Undefined",BH1 HD
-http://new-pro.tv:8080/Fernando/123321/29196?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",BHT 1
-http://new-pro.tv:8080/Fernando/123321/190632?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",BN Music
-http://new-pro.tv:8080/Fernando/123321/21415?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",BN Sat HD
-http://new-pro.tv:8080/Fernando/123321/68727?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",BN TV
-http://new-pro.tv:8080/Fernando/123321/21416?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Bugojno TV
-http://new-pro.tv:8080/Fernando/123321/101500?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",City TV
-http://new-pro.tv:8080/Fernando/123321/68728?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Federalna TV [ FTV ]
-http://new-pro.tv:8080/Fernando/123321/68730?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Glas Drine
-http://new-pro.tv:8080/Fernando/123321/122007?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",HAYAT Music
-http://new-pro.tv:8080/Fernando/123321/122002?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Hayat Folk
-http://new-pro.tv:8080/Fernando/123321/21409?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Hayat HD
-http://new-pro.tv:8080/Fernando/123321/21408?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Hayatovci
-http://new-pro.tv:8080/Fernando/123321/21240?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",History HD
-http://new-pro.tv:8080/Fernando/123321/28419?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Izvorna TV
-http://new-pro.tv:8080/Fernando/123321/21241?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",N1 Bosna
-http://new-pro.tv:8080/Fernando/123321/190633?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",NTV 101 Prijedor
-http://new-pro.tv:8080/Fernando/123321/190638?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",OTV Valentino
-http://new-pro.tv:8080/Fernando/123321/122009?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Obn Tv
-http://new-pro.tv:8080/Fernando/123321/29154?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Pink BH
-http://new-pro.tv:8080/Fernando/123321/14103?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Podrinje TV
-http://new-pro.tv:8080/Fernando/123321/190635?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",RTRS
-http://new-pro.tv:8080/Fernando/123321/122004?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",RTRS Plus
-http://new-pro.tv:8080/Fernando/123321/122011?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",RTV Krajina
-http://new-pro.tv:8080/Fernando/123321/190636?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Rtv Zenica
-http://new-pro.tv:8080/Fernando/123321/21242?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",TV Sehara HD
-http://new-pro.tv:8080/Fernando/123321/29193?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",TV Slon Extra
-http://new-pro.tv:8080/Fernando/123321/55567?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",USK TV
-http://new-pro.tv:8080/Fernando/123321/21278?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/W3FBVwT.png" group-title="Undefined",HRT 1 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226139/01.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/W3FBVwT.png" group-title="Undefined",HRT 1 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226139/03.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/W3FBVwT.png" group-title="Undefined",HRT 1 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226139/index.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/W3FBVwT.png" group-title="Undefined",HRT 1 [NO KODI]
-http://195.29.70.84/PLTV/88888888/224/3221226139/04.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/W3FBVwT.png" group-title="Undefined",HRT 1 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226139/01.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/W3FBVwT.png" group-title="Undefined",HRT 1 [NO KODI]
-http://195.29.70.84/PLTV/88888888/224/3221226139/04.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/W3FBVwT.png" group-title="Undefined",HRT 1 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226139/index.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/W3FBVwT.png" group-title="Undefined",HRT 1 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226139/03.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/7swOkC3.png" group-title="Undefined",HRT 2 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226140/01.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/7swOkC3.png" group-title="Undefined",HRT 2 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226140/02.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/7swOkC3.png" group-title="Undefined",HRT 2 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226140/03.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/7swOkC3.png" group-title="Undefined",HRT 2 [NO KODI]
-http://195.29.70.82/PLTV/88888888/224/3221226140/04.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/7swOkC3.png" group-title="Undefined",HRT 2 [NO KODI]
-http://195.29.70.82/PLTV/88888888/224/3221226140/index.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/7swOkC3.png" group-title="Undefined",HRT 2 [NO KODI]
-http://195.29.70.82/PLTV/88888888/224/3221226140/index.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/7swOkC3.png" group-title="Undefined",HRT 2 [NO KODI]
-http://195.29.70.82/PLTV/88888888/224/3221226140/04.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/7swOkC3.png" group-title="Undefined",HRT 2 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226140/03.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/7swOkC3.png" group-title="Undefined",HRT 2 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226140/02.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/7swOkC3.png" group-title="Undefined",HRT 2 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226140/01.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/0hrv92c.png" group-title="Undefined",HRT 3 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226280/01.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/0hrv92c.png" group-title="Undefined",HRT 3 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226280/03.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/0hrv92c.png" group-title="Undefined",HRT 3 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226280/04.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/0hrv92c.png" group-title="Undefined",HRT 3 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226280/index.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/0hrv92c.png" group-title="Undefined",HRT 3 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226280/index.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/0hrv92c.png" group-title="Undefined",HRT 3 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226280/04.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/0hrv92c.png" group-title="Undefined",HRT 3 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226280/03.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/0hrv92c.png" group-title="Undefined",HRT 3 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226280/01.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/UVFs4zA.png" group-title="Undefined",HRT 4 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226281/01.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/UVFs4zA.png" group-title="Undefined",HRT 4 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226281/03.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/UVFs4zA.png" group-title="Undefined",HRT 4 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226281/index.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/UVFs4zA.png" group-title="Undefined",HRT 4 [NO KODI]
-http://195.29.70.89/PLTV/88888888/224/3221226281/04.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/UVFs4zA.png" group-title="Undefined",HRT 4 [NO KODI]
-http://195.29.70.89/PLTV/88888888/224/3221226281/index.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/UVFs4zA.png" group-title="Undefined",HRT 4 [NO KODI]
-http://195.29.70.89/PLTV/88888888/224/3221226281/04.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/UVFs4zA.png" group-title="Undefined",HRT 4 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226281/index.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/UVFs4zA.png" group-title="Undefined",HRT 4 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226281/03.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/UVFs4zA.png" group-title="Undefined",HRT 4 [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226281/01.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226027/01.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226027/02.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226027/03.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226027/04.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.84/PLTV/88888888/224/3221226027/04.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226027/index.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.84/PLTV/88888888/224/3221226027/index.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.84/PLTV/88888888/224/3221226027/04.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226027/04.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226027/03.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226027/02.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/RApnwWl.jpg" group-title="Undefined",MAXtv Promo Kanal [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226027/01.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/aJGNyQn.png" group-title="Undefined",RTL [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226195/01.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/aJGNyQn.png" group-title="Undefined",RTL [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226195/03.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/aJGNyQn.png" group-title="Undefined",RTL [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226195/04.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/aJGNyQn.png" group-title="Undefined",RTL [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226195/index.m3u8?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/aJGNyQn.png" group-title="Undefined",RTL [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226195/index.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/aJGNyQn.png" group-title="Undefined",RTL [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226195/04.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/aJGNyQn.png" group-title="Undefined",RTL [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226195/03.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="HR" tvg-logo="https://i.imgur.com/aJGNyQn.png" group-title="Undefined",RTL [NO KODI]
-http://195.29.70.67/PLTV/88888888/224/3221226195/01.m3u8?checkedby:iptvsat.com&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MK" tvg-logo="" group-title="Undefined",Cinestar TV Premiere 1 HD
-http://new-pro.tv:8080/Fernando/123321/59485?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MK" tvg-logo="" group-title="Undefined",Cinestar TV Premiere 2 HD
-http://new-pro.tv:8080/Fernando/123321/59486?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MK" tvg-logo="" group-title="Undefined",Fox Life HD
-http://new-pro.tv:8080/Fernando/123321/59147?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MK" tvg-logo="" group-title="Undefined",HBO 1 HD
-http://new-pro.tv:8080/Fernando/123321/59130?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MK" tvg-logo="" group-title="Undefined",HBO 3 HD
-http://new-pro.tv:8080/Fernando/123321/196803?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MK" tvg-logo="" group-title="Undefined",M1 Film
-http://new-pro.tv:8080/Fernando/123321/196812?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MK" tvg-logo="" group-title="Undefined",Nova TV
-http://new-pro.tv:8080/Fernando/123321/196821?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MK" tvg-logo="" group-title="Undefined",Viasat Explore HD
-http://new-pro.tv:8080/Fernando/123321/59498?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="MK" tvg-logo="" group-title="Undefined",Viasat History
-http://new-pro.tv:8080/Fernando/123321/196830?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Sport",ARENA SPORT 1 (SR)
-http://bestbuyiptv.live:8080/republicwe4-restream/zE6A9aJ6123456/30759?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Sport",ARENA SPORT 1 (SR)
-http://premium-iptv.link:8080/eclipse2000inflatables/HGSgcjY6sR/30759?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Sport",ARENA SPORT 1 HD (HR)
-http://listplay4k.live:8080/play/sEqGlXBK924GUbV9yuY_SD5YeVHnWEm7dfRkporL1dU/ts?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Sport",ARENA SPORT 1 HD (SR)
-http://listplay4k.live:8080/play/sEqGlXBK924GUbV9yuY_SPRGQQZtI1IjWzaisLc5c8g/ts?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Sport",ARENA SPORT 2 HD (HR)
-http://listplay4k.live:8080/play/sEqGlXBK924GUbV9yuY_SC3coHRuanEjN2irkPwGsBU/ts?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",NOVA TV HR
-http://bestbuyiptv.live:8080/republicwe4-restream/zE6A9aJ6123456/4342?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",NOVA TV
-http://premium-iptv.link:8080/eclipse2000inflatables/HGSgcjY6sR/3538?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",NOVA TV
-http://bestbuyiptv.live:8080/republicwe4-restream/zE6A9aJ6123456/3538?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",NOVA TV HR
-http://premium-iptv.link:8080/eclipse2000inflatables/HGSgcjY6sR/4342?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Cinestar Premiere 1
-http://bestbuyiptv.live:8080/republicwe4-restream/zE6A9aJ6123456/3534?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Cinestar Premiere 1
-http://premium-iptv.link:8080/eclipse2000inflatables/HGSgcjY6sR/3534?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Cinestar Premiere 2
-http://new-pro.tv:8080/Fernando/123321/21243?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Discovery Channel
-http://7090.eu:88/prokappli/Ibkli0PAdG02/5919?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="RU" tvg-logo="" group-title="Undefined",Discovery Channel HD
-http://new-pro.tv:8080/Fernando/123321/20312?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Discovery Channel HD
-http://new-pro.tv:8080/Fernando/123321/28420?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Discovery FHD
-http://new-pro.tv:8080/Fernando/123321/71382?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Discovery Historia
-http://new-pro.tv:8080/Fernando/123321/71380?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Discovery ID HD
-http://new-pro.tv:8080/Fernando/123321/28405?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Discovery Science HD
-http://new-pro.tv:8080/Fernando/123321/55692?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Disney Channel (+4)
-http://rt-sib-bul-htlive-lb.cdn.ngenix.net/hls/CH_R02_DISNEYCHANNEL/variant.m3u8?version=2&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Disney Channel (+7)
-http://zabava-htlive.cdn.ngenix.net/hls/CH_DISNEY_7/bw2000000/variant.m3u8?version=2&checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Sport",EuroSport 2 HD
-http://new-pro.tv:8080/Fernando/123321/33417?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Sport",Eurosport 1
-http://bestbuyiptv.live:8080/republicwe4-restream/zE6A9aJ6123456/3528?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Sport",Eurosport 1
-http://premium-iptv.link:8080/eclipse2000inflatables/HGSgcjY6sR/3528?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Federalna TV
-http://bestbuyiptv.live:8080/republicwe4-restream/zE6A9aJ6123456/3524?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",Face TV HD
-http://7090.eu:88/prokappli/Ibkli0PAdG02/10767?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="" tvg-logo="" group-title="Undefined",FOX
-http://premium-iptv.link:8080/eclipse2000inflatables/HGSgcjY6sR/3519?checkedby:iptvcat.com
+#EXTINF:-1 tvg-id="B1TV.ba" status="online",B1 TV (1080p) [Not 24/7]
+http://proxy.bihnet.net:88/live/b1tv.m3u8
+#EXTINF:-1 tvg-id="BHRT.ba" status="timeout",BHRT (720p) [Geo-blocked]
+https://bhrtstream.bhtelecom.ba/bhrtportal.m3u8
+#EXTINF:-1 tvg-id="BHRT.ba" status="timeout",BHRT (270p) [Geo-blocked]
+https://bhrtstream.bhtelecom.ba/hls15/bhrtportal.m3u8
+#EXTINF:-1 tvg-id="BNTV.ba" status="online",BN TV (480p)
+https://dns2.rtvbn.com:8080/live/index.m3u8
+#EXTINF:-1 tvg-id="ntvic.ba" status="error",NTV IC (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/ntvic
+#EXTINF:-1 tvg-id="RTVBPK.ba" status="online",RTV BPK (720p) [Not 24/7]
+https://webtvstream.bhtelecom.ba/gorazde_cam2.m3u8
+#EXTINF:-1 tvg-id="RTVHB.ba" status="online",RTV HB (576p) [Not 24/7]
+https://prd-hometv-live-open.spectar.tv/ERO_1_083/playlist.m3u8
+#EXTINF:-1 tvg-id="Televizija5.ba" status="online",Televizija 5 (576p)
+https://balkanmedia.dynu.net/hls/tv5web.m3u8
+#EXTINF:-1 tvg-id="TVSlonExtra.ba" status="online",TV Slon Extra (1080p) [Not 24/7]
+http://31.47.0.130:8082
+#EXTINF:-1 tvg-id="TVSlonExtra.ba" status="online",TV Slon Extra (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/RTVSLON/live
+#EXTINF:-1 tvg-id="TVSlonInfo.ba" status="error",TV SLON INFO (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=YHLiGONh--I
+#EXTINF:-1 tvg-id="" status="online",Malta (720p) [Not 24/7]
+http://webtvstream.bhtelecom.ba/malta.m3u8
+#EXTINF:-1 tvg-id="" status="online",РТРС (576p) [Geo-blocked]
+https://parh.rtrs.tv/tv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",RTV ZE (720p) [Not 24/7]
+https://stream.rtvze.ba/123.m3u8
