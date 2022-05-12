@@ -5,7 +5,7 @@ http://new-pro.tv:8080/Fernando/123321/21419?checkedby:iptvcat.com
 http://new-pro.tv:8080/Fernando/123321/28421?checkedby:iptvcat.com
 #EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",Alternativna
 http://new-pro.tv:8080/Fernando/123321/55691?checkedby:iptvcat.com
-#EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",BH1 HD
+#EXTINF:-1 tvg-country="BA" tvg-logo="" group-title="Undefined",BH1 HD
 http://new-pro.tv:8080/Fernando/123321/29196?checkedby:iptvcat.com
 #EXTINF:0 tvg-country="BA" tvg-logo="" group-title="Undefined",BHT 1
 http://new-pro.tv:8080/Fernando/123321/190632?checkedby:iptvcat.com
