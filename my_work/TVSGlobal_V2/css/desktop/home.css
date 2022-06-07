@@ -50,7 +50,6 @@ header {
     top: 0;
     transition: box-shadow .2s ease;
     transition-delay: .3s;
-    z-index: 100;
 }
 
 .box-shadow {
