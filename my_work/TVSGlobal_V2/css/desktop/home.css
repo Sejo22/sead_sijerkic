@@ -165,7 +165,9 @@ header {
 }
 
 .intro-bg-text {
-    background: url(https://cdn-akgdl.nitrocdn.com/VknZzhkbJaKHLeBKjSITbcDaEDgjqpfP/assets/static/optimized/rev-681a28c/wp-content/uploads/2020/09/home-eerlijke.png);
+    background: url(../../images/spanimg.png) no-repeat bottom;
+    color: var(--heading);
+
 }
 
 .section-h1 {
