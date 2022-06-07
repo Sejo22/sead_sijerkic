@@ -1,0 +1,206 @@
+@media screen and (max-width:767.9px) {
+
+    .nav-logo {
+        height: 48px;
+    }
+    .nav-toggler {
+        display: block;
+    }
+    .nav-list {
+        z-index: 10;
+        width: 100%;
+        height: calc(100vh - 120px);
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        right: -800px;
+        transition: ease-in 0.3s all;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: scroll;
+      }
+      .nav-list.open {
+        right: 0;
+      }
+
+      .nav-items {
+          padding: 3rem;
+      }
+
+      .nav-link {
+          font-size: 1.5rem;
+      }
+      .scroll-lock {
+        overflow: hidden;
+      }
+      
+      .intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        width: 98%;
+        margin: 0 auto;
+        min-height: 0;
+      }
+      .intro-img {
+        width: 100%;
+        min-height: 300px;
+        background-position: bottom;
+      }
+
+      .intro-text {
+        padding-right: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .intro-text h1 {
+        font-size: 2.5rem;
+        line-height: 48px;
+        padding-top: 1rem;
+      }
+      .intro-text p {
+        font-size: 1rem;
+        line-height: 24px;
+        padding: 1rem .5rem;
+      }
+      .btn {
+          margin: 1rem 0;
+      }
+      .dwn-arr {
+          display: none;
+      }
+
+
+      .about-us-wrapper {
+          flex-direction: column;
+          width: 100%;
+          margin-top: 0;
+          margin: 0 auto ;
+          align-items: center;
+          justify-content: space-between;
+      }
+      .about-us-text {
+          text-align: center;
+          padding: 0;
+          width: 100%;
+      }
+
+      .about-us-text .section-p {
+          width: 100%;
+      }
+
+      .about-us-img img {
+          max-height: 500px;
+          object-fit: cover;
+          object-position: bottom;
+      }
+
+      .section-h1 {
+          font-size: 2.5rem;
+          line-height: 48px;
+          padding-top: 1rem;
+      }
+      .section-p {
+          font-size: 1rem;
+          line-height: 24px;
+      }
+
+      .cards {
+        flex-direction: column;
+        margin: 0 auto;
+        max-height: none;
+      }
+      .card {
+          max-width: 90%;
+          padding: 0;
+          margin: 0;
+          margin-top: 2rem;
+      }
+      .card .card-overlay {
+          max-width: 100%;
+      }
+      .card-text {
+          width: 100%;
+      }
+
+      .partners-wrapper {
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+      }
+      .partner {
+          width: 45%;
+          padding: 0;
+          margin: 0.5rem;
+      }
+
+      .footer-text ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+      }
+      .footer-text ul li {
+          padding: 1rem 0;
+      }
+      .footer-text p, .footer-text a i {
+          margin: 2rem 0;
+      }
+}
+
+@media screen and (min-width: 570px) and (max-width:767.9px) {
+    .partner {
+        width: 25%;
+        padding: 0;
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1113.9px) {
+    .card {
+        width: 250px;
+    }
+    .card .card-overlay {
+        max-width: 100%;
+    }
+
+    .nav-list {
+        padding: 0;
+    }
+    .nav-items {
+        padding: 0.5rem;
+    }
+    .nav-link {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .nav-logo {
+        max-height: 56px;
+    }
+    .intro-text h1, .section-h1 {
+        font-size: 3rem;
+        line-height: 56px;
+    }
+    .section-p {
+        padding-right: 0.5rem;
+    }
+    .intro-text {
+        padding-left: .5rem;
+    }
+
+    .about-us-img img {
+        max-width: 500px;
+    }
+    .about-us-img {
+        min-width: 400px;
+    }
+    .partner {
+        width: 45%;
+        padding: 0;
+        margin: 0.5rem;
+    }
+}
