@@ -1,5 +1,7 @@
 @media screen and (max-width:767.9px) {
-
+    header {
+        z-index: 10;
+    }
     .nav-logo {
         height: 48px;
     }
@@ -8,7 +10,7 @@
     }
     .nav-list {
         width: 100%;
-        z-index: 10;
+        z-index: 9;
         min-height: 10vh;
         background-color: #fff;
         position: absolute;
