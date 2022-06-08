@@ -1,3 +1,5 @@
+
+// NAV TOGGLE
 const navToggler = document.querySelector('.nav-toggler');
 const navUlOpen = document.querySelector('ul');
 let navOpen = false;
@@ -16,12 +18,12 @@ navToggler.addEventListener('click', () => {
     }
 });
 
-
+// SCROLL TOP
 window.onbeforeunload = function () {
     window.scrollTo(0,0);
 }
 
-
+// HEADER BOXSHADOW
 const navBar = document.getElementById('header');
 window.addEventListener('scroll', () => {
     let lastPos = window.scrollY;

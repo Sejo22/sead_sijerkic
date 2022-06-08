@@ -40,12 +40,38 @@ a:hover {
     color: var(--main);
 }
 
+.btn {
+    background-color: var(--main);
+    padding: 1rem 4rem;
+    color: var(--white);
+    border-radius: 5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color .2s ease;
+    text-align: center;
+    max-width: 300px;
+}
+.btn:hover {
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
 header {
     width: 100%;
-    background-color: var(--white);
+    background-color: #fff;
     display: grid;
     place-items: center;
     min-height: 120px;
+    position: fixed;
+    top: 0;
+    transition: box-shadow .2s ease;
+    z-index: 100;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.1); 
+    box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.1);
+    background-color: var(--white);
 }
 
 .inner-header {
@@ -129,7 +155,184 @@ header {
 
 .container {
     max-width: 1210px;
-    margin: 1rem auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 470px;
+    background-color: var(--white);
+}
+.hero-img-wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: -5;
+    top: 0;
+}
+
+.hero-title-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    bottom: 0;
+    display: grid;
+    place-content: center;
+}
+
+.hero-img {
+    width: 100%;
+    min-height: 450px;
+    background: url(../../images/hero-img2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+    
+}
+
+.hero-img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.hero-title {
+    color: var(--white);
+    font-size: 4rem;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.roadmap-cards {
+    padding: 4rem 0;
+    width: 100%;
+}
+
+.roadmap-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.1); 
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.q-name {
+    min-height: 300px;
+    display: grid;
+    place-content: center;
+    background-color: #DE4141;
+    width: 25%;
+    color: var(--white);
+    font-size: 2.5rem;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.q-2 {
+    background-color: #419CDE;
+}
+
+.q-3 {
+    background-color: #41DE9C;
+}
+.q-4 {
+    background-color: #8641DE;
+}
+
+.roadmap-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.roadmap-month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 .5rem;
+    height: 300px;
+    overflow: scroll;
+    position: relative;
+    padding-right: 1rem;
+    max-width: 285px;
+
+}
+
+.month-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 24px;
+    min-height: 40px;
+    display: grid;
+    place-items: center;
+    padding: 0 .5rem;
+    color: var(--grey);
+}
+
+.roadmap-details {
+    min-height: 260px;
+    padding:.5rem;
+}
+
+.roadmap-detail {
+    border-left: 8px #DE4141 solid;
+    margin: .5rem 0;
+    border-radius: 4px;
+}
+.detail-2 {
+    border-color: #0091ca;
+}
+
+.detail-3 {
+    border-color: #41DE9C;
+}
+
+.detail-4 {
+    border-color: #8641DE;
+}
+
+.roadmap-info {
+    padding: .5rem;
+    background-color: rgba(222, 65, 65,.1);
+    display: inline-block;
+    border-radius: 4px;
+    color: #242424;
+}
+
+.info-2 {
+    background-color: rgba(0, 145, 202,.1);
+}
+.info-3 {
+    background-color: rgba(65, 222, 156,.1);
+}.info-4 {
+    background-color: rgba(134, 65, 222,.1);
+}
+
+.bottom-section {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.bottom-section h1 {
+    font-size: 2rem;
+    line-height: 40px;
+    color: var(--heading);
+}
+.bottom-section p {
+    font-size: 1rem ;
+    line-height: 24px;
+    padding: 1rem 0;
+    color: var(--text);
 }
 
 footer {

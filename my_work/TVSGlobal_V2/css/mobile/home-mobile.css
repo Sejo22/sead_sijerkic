@@ -11,14 +11,14 @@
     .nav-list {
         width: 100%;
         z-index: 9;
-        min-height: 10vh;
+        min-height: 100vh;
         background-color: #fff;
         position: absolute;
         top: 120px;
         right: -800px;
         transition: ease-in 0.3s all;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         overflow: scroll;
@@ -37,7 +37,10 @@
       .scroll-lock {
         overflow: hidden;
       }
-      
+      .intro-bg-text {
+        background-position: top;
+        padding-bottom: .325rem;
+    }
       .intro {
         flex-direction: column-reverse;
         align-items: center;
