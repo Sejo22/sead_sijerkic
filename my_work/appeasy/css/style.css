@@ -156,6 +156,57 @@ nav ul {
   }
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
+.nav-toggler {
+  width: 30px;
+  min-height:24px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+
+.nav-toggle {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color:#1b1564;
+  transition: all 0.5s ease-in-out;
+  border-radius: 1rem;
+}
+.togg-top {
+  top: 0;
+}
+
+.togg-cen {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  right: 0;
+}
+
+.togg-bot {
+  bottom: 0%;
+}
+
+.nav-toggler.open .togg-cen {
+  transform: translateX(-50px);
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.nav-toggler.open .togg-top {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.nav-toggler.open .togg-bot {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
 .container {
   max-width: 1210px;
   margin: 0 auto;
