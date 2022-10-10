@@ -1,66 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 
-.nav-toggler {
-    width: 40px;
-    min-height:24px;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    
-}
-
-.nav-toggle {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: var(--text-color);
-    transition: all 0.5s ease-in-out;
-    border-radius: 1rem;
-}
-.togg-top {
-    top: 0;
-}
-
-.togg-cen {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.togg-bot {
-    bottom: 0%;
-}
-
-.nav-toggler.open .togg-cen {
-    transform: translateX(-50px);
-    background-color: transparent;
-    pointer-events: none;
-}
-
-.nav-toggler.open .togg-top {
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-}
-.nav-toggler.open .togg-bot {
-    bottom: 50%;
-    transform: translateY(50%) rotate(-45deg);
-}
-
-
-
-
-
-
-.keyboard-img-rotate.active {
-    transform: perspective(600px) translateY(0) rotate(0);
-}
-
-.main-section-content.active {
-    transform: translateY(150px);
-    opacity: 0;
-    pointer-events: none;
-    transition: all ease 2s;
-}
 
 @keyframes pulse {
     0% {
@@ -153,6 +93,17 @@ section {
     margin: 0 auto;
 }
 
+.keyboard-img-rotate.active {
+    transform: perspective(600px) translateY(0) rotate(0);
+}
+
+.main-section-content.active {
+    transform: translateY(150px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease 2s;
+}
+
 .navbar {
     display: flex;
     width: 80%;
@@ -232,6 +183,53 @@ section {
     font-size: .825rem;
     padding-left: .5rem;
 }
+
+.navbar-toggler {
+    width: 40px;
+    min-height:24px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+.navbar-toggle {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: all 0.5s ease-in-out;
+    border-radius: 1rem;
+}
+.togg-top {
+    top: 0;
+}
+
+.togg-cen {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.togg-bot {
+    bottom: 0%;
+}
+
+.navbar-toggler.open .togg-cen {
+    transform: translateX(-50px);
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.navbar-toggler.open .togg-top {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+.navbar-toggler.open .togg-bot {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+
 
 .bg-image {
     position: absolute;
