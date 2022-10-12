@@ -7,11 +7,12 @@
 }
 
 @media all and (max-width:767px) {
+    .scroll-lock {
+        overflow: hidden;
+      }
+
     section {
         overflow-x: hidden !important;
-    }
-    .sticky-img {
-        position: relative;
     }
 
     p {
@@ -34,15 +35,16 @@
         min-height: fit-content;
         background-color: var(--bg-color);
         position: absolute;
-        top: 120px;
-        right: -800px;
+        top: -820px;
+        left: 0;
         transition: ease-in 0.3s all;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
+        min-height: 100vh;
       }
       .navbar-list.open {
-        right: 0;
+        top: 120px;
         display: flex;
         opacity: 1;
       }
@@ -50,13 +52,38 @@
       .navbar-item {
         padding: 2rem 0;
       }
+
       .navbar-link {
         font-size: 1.5rem;
       }
 
-    .form-wrapper {
+      .desktop-form {
         display: none;
     }
+    
+    .navbar-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mobile-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .navbar-form-input,.navbar-form-btn {
+        margin: 8px 0;
+        width: 100%;
+    }
+
+    .forgot-pass {
+        text-align: center;
+    }
+    
     .navbar-logo img{
         max-width: 180px;
     }
@@ -217,5 +244,114 @@
     .subscribe-mail, .subscribe-btn {
         font-size: 1rem;
         padding: .5rem;
+    }
+}
+
+@media all and (min-width:579px) and (max-width:767.9px) {
+    .data-items {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1216.9px)  {
+    .navbar{
+        width: 100%;
+        padding: 1rem;
+        margin: 0 !important;
+        align-items: center;
+    }
+
+    .navbar-logo img {
+        max-width: 180px;
+      }
+    .navbar-link {
+        font-size: 1rem;
+    }
+
+    .desktop-form {
+        align-items: center;
+    }
+
+    .navbar-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-form-btn, .navbar-form-input {
+        width: 80%;
+        margin: 4px 0;
+        font-size: .875rem;
+    }
+
+    .main-section-content, .keyboard-text {
+        padding: 0 1rem;
+    }
+    
+    .main-heading {
+        font-size: 3rem;
+        line-height: 64px;
+    }
+
+    .main-sign-up {
+        font-size: 2rem;
+    }
+
+    .main-text {
+        font-size: 1.5rem;
+    }
+
+    .data-item {
+        width: 80px;
+    }
+
+    .data-item i {
+        font-size: 1.125rem;
+        line-height: 28px;
+    }
+
+    .data-item img {
+        width: 28px !important;
+    }
+
+    .data-item h6 {
+        font-size: .875rem;
+    }
+    .data-gif-img,.data-feature-img,.data-feature-text {
+        width: 50%;
+    }
+    .data-gif-img img,.data-feature-img img {
+        width: 100%;
+    }
+
+    .data-wrapper, .data-features {
+        padding: 2rem 1rem 6rem 1rem;
+    }
+    .features-section-content {
+        padding: 0 1rem;
+    }
+    .our-partners-row {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .help-card {
+        padding: 1rem;
+        justify-content: space-around;
+    }
+    .help-card .card-text h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (min-width:1216px) and (max-width:1520px) {
+    .navbar {
+        width: 100%;
+        margin: 0;
     }
 }

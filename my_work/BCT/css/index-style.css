@@ -132,7 +132,6 @@ section {
 
 .navbar-logo {
     flex-basis: 16.65%;
-
 }
 
 .navbar-list {
@@ -161,6 +160,10 @@ section {
     flex-direction: column;
     justify-content:baseline;
     align-items:flex-start;
+}
+
+.mobile-form {
+    display: none;
 }
 
 .navbar-form-input {
@@ -369,6 +372,7 @@ section {
 .data-features {
     display: flex;
     align-items: center;
+    padding: 4rem 0;
 }
 
 .data1 {
