@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="css/index-style.css" id="style" />
     <link rel="stylesheet" href="css/index-style-responsive.css" />
     <link rel="shortcut icon" href="images/icons/axe.png" type="image/x-icon" />
     <script
@@ -12,19 +12,13 @@
       crossorigin="anonymous"
     ></script>
     <script
+      id="jquery"
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
-    <script src="jquery.nicescroll.js"></script>
-    <script>
-      $(function () {
-        $("body").niceScroll({
-          scrollspeed: 160,
-          cursorwidth: "2px",
-        });
-      });
-    </script>
+    <script id="scroll" src="jquery.nicescroll.js"></script>
+
     <title>Blockchain Terminal</title>
   </head>
   <body>
@@ -62,7 +56,7 @@
             />
             <button class="navbar-form-btn">Sign in</button>
           </form>
-          <a href="#" class="forgot-pass">Forgot Password?</a>
+          <a href="#" id="fgp" class="forgot-pass">Forgot Password?</a>
         </div>
         <div class="navbar-toggler">
           <span class="navbar-toggle togg-top"></span>
@@ -77,7 +71,7 @@
             <h1 class="main-heading">
               The Bloomberg Terminal equivalent for cryptocurrency.
             </h1>
-            <a class="main-sign-up" href="#"><u>Sign up for free access</u></a>
+            <a class="main-sign-up" href="#">Sign up for free access</a>
           </div>
           <div class="main-section-text">
             <p class="main-text">
@@ -96,7 +90,7 @@
         </div>
         <div class="keyboard-img">
           <img
-            class="keyboard-img-rotate active"
+            class="keyboard-img-rotate"
             src="images/Blockchainterminal_Keyboard.png"
             alt=""
           />
@@ -497,7 +491,13 @@
     </section>
 
     <script src="app.js" type="module"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script
+      id="gsap"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    ></script>
+    <script
+      id="gsap2"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+    ></script>
   </body>
 </html>

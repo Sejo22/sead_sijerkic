@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) ;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(-55%) rotateY(45deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform:translateX(-60%) rotateY(0);
+        opacity: 1;
+    }
+}
+
 
 
 @keyframes pulse {
@@ -94,7 +118,7 @@ section {
 }
 
 .keyboard-img-rotate.active {
-    transform: perspective(600px) translateY(0) rotate(0);
+    transform: perspective(1000px) translateY(0) rotateX(0);
 }
 
 .main-section-content.active {
@@ -229,28 +253,28 @@ section {
     transform: translateY(50%) rotate(-45deg);
 }
 
-
-
 .bg-image {
     position: absolute;
     top: -25%;
     left: 50%;
-    transform: translateX(-60%);
     max-width: 1600px;
     z-index: -5;
+    animation: rotate 2s forwards;
+    transition: all 2s ease;
 }
-
 
 .main-section-content {
     padding: 4rem 0 0 0 ;
     margin: 6rem 0;
     transition: all ease 2s;
+    position: relative;
 }
 
 .main-heading {
     font-size: 4rem;
     line-height: 88px;
     padding: 1rem 0;
+    animation: fadeIn 4s ease-in-out;
 }
 
 .main-section-heading {
@@ -258,11 +282,13 @@ section {
     transition: all ease .2s;
 }
 
-
-.main-sign-up u {
+.main-sign-up {
+    position: absolute;
+    animation: fadeIn 4s ease-in-out;
     font-size: 3rem;
     line-height: 88px;
     color: var(--accent-color) !important;
+    text-decoration: underline;
 }
 
 .main-text {
@@ -280,7 +306,7 @@ section {
 }
 
 .keyboard-img-rotate {
-    transform: perspective(1200px) translateY(-50px) rotateX(15deg);
+    transform: perspective(2200px) translateY(-50px) rotateX(45deg);
     max-width: 90%;
     transition: all ease 2s;
 }

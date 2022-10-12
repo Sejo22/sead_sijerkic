@@ -1,6 +1,8 @@
 gsap.to(".keyboard-img-rotate", {
   scrollTrigger: {
     trigger: ".keyboard-img-rotate",
+    start: "top center",
+    end: "+=500",
     toggleClass: "active",
   },
 });
@@ -40,3 +42,12 @@ navToggler.addEventListener("click", () => {
     navUlOpen.classList.remove("open");
   }
 });
+
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(
+    navigator.userAgent
+  )
+) {
+  $("#scroll").remove();
+  $("#gsap").remove();
+}
