@@ -7,7 +7,9 @@
 }
 
 @media all and (max-width:767px) {
-
+    section {
+        overflow-x: hidden !important;
+    }
     .sticky-img {
         position: relative;
     }
@@ -19,12 +21,13 @@
     }
     .container {
         width: 100%;
-        
     }
     .navbar-toggler {
         display: block;
     }
-
+    .navbar {
+        overflow-x: hidden;
+    }
     .navbar-list {
         width: 100%;
         z-index: 9;
@@ -34,7 +37,6 @@
         top: 120px;
         right: -800px;
         transition: ease-in 0.3s all;
-        display: none;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
@@ -86,11 +88,18 @@
         padding: 1rem .5rem;
     }
 
-    .bg-image {
-        max-width: 200%;
+    .bg-image-wrapper {
+        margin: 0 auto;
+        width: 100%;
         top: 0;
-        overflow-x: hidden;
-        animation: none;
+        left: 30%;
+        overflow-x: hidden !important;
+        min-height: 100%;
+    }
+
+    .bg-image {
+        width: 100%;
+        transform: scale(1.7);
     }
 
     .section-title h1 {
@@ -114,8 +123,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(7, 1fr);
-        grid-column-gap: 8px;
-        grid-row-gap: 8px;
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
     }
     .data-features {
         flex-direction: column;
@@ -144,19 +153,20 @@
     }
     .our-partners-wrapper {
         margin: 0 auto;
-        max-width: 90%;
-        align-items: center;
-        justify-content: center;
+        min-width: 100%;
         min-height: 100px;
+        display: flex;
+        flex-direction: column;
     }
     .our-partners-row {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 80px;
-        grid-row-gap: 40px;
-        
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .img-wrapper {
+        margin: 32px;
     }
 
     .partners-img {

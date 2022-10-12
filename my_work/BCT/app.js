@@ -1,31 +1,36 @@
 gsap.to(".keyboard-img-rotate", {
+  transformOrigin: "center",
+  rotationX: 0,
+  ease: "none",
   scrollTrigger: {
     trigger: ".keyboard-img-rotate",
-    start: "top center",
+    start: "top bottom",
     end: "+=500",
-    toggleClass: "active",
+    scrub: true,
   },
 });
 
 gsap.to(".main-section-content", {
+  yPercent: 150,
+  opacity: 0,
+  ease: "none",
   scrollTrigger: {
     trigger: ".main-section-content",
-    toggleClass: "active",
-    start: "bottom top", // when the top of the trigger hits the top of the viewport
-    end: "+=2500",
+    start: "top top",
+    end: "+=80",
+    scrub: true,
   },
 });
 
-gsap.from(".bg-image", {
-  scrollTrigger: {
-    trigger: ".main-heading",
-    scrub: true,
-    pin: false,
-    start: "top top",
-    end: "+=500",
-  },
-  x: -800,
-});
+// gsap.from(".bg-image-wrapper", {
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".bg-image-wrapper",
+//     start: "center top",
+//     end: "bottom top",
+//     scrub: true,
+//   },
+// });
 
 // NAV TOGGLE
 const navToggler = document.querySelector(".navbar-toggler");
@@ -43,11 +48,9 @@ navToggler.addEventListener("click", () => {
   }
 });
 
-if (
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(
-    navigator.userAgent
-  )
-) {
+let deviceWidth = $(window).width();
+if (deviceWidth < 768) {
   $("#scroll").remove();
-  $("#gsap").remove();
+} else {
+  // NO SCRIPT
 }
