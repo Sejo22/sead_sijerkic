@@ -14,14 +14,26 @@
 
 @keyframes rotate {
     0% {
-        transform: translate(-20%, -5%) rotateY(25deg);
+        transform: translate3d(0, 0, 0);
         opacity: 0;
     }
 
     100% {
         opacity: 1;
-        transform: scale(1) translate(-30%,-5%) rotateY(0);
+        transform: translate3d(-30px, 0, 0);
     }
+}
+
+@keyframes rotate-img {
+    0% {
+        opacity: 0;
+        transform: rotateY(-40deg);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+      }
 }
 
 
@@ -94,7 +106,17 @@
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
+} 
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #292933;
+    z-index: 5;
 }
+
 
 a {
     text-decoration: none;
@@ -127,17 +149,18 @@ section {
     padding: 2rem 0;
 }
 .navbar-logo img {
-    max-width: 300px;
+    max-width: 260px;
 }
 
 .navbar-logo {
     flex-basis: 16.65%;
+    flex: 1 1 auto;
 }
 
 .navbar-list {
+    flex: 6 1 auto;
     list-style: none;
     display: flex;
-    flex-basis: 16.65%;
 }
 
 .navbar-item {
@@ -156,6 +179,7 @@ section {
 }
 
 .form-wrapper {
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content:baseline;
@@ -247,24 +271,34 @@ section {
 }
 
 .bg-image-wrapper {
-    position: absolute;
-    top: -25%;
+    position: fixed;
+    top: -22%;
+    left: -10%;
     width: 100%;
     z-index: -5;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: rotate 2s forwards;
+    animation: rotate-img 1.2s ease-in alternate both;
+    animation-delay: 1.5s;
 }
 
 .bg-image {
-    width: 100%;
+    width: 80%;
+    animation: rotate2 4s ease;
+    animation-delay: 1.5s;
     transition: all 2s ease;
 }
 
+.main-section {
+    position: relative;
+    min-height: 100vh;
+}
+
+
 .main-section-content {
-    padding: 4rem 0 0 0 ;
-    margin: 6rem 0;
+    padding: 9rem 0 ;
+    margin: 8rem 0;
     transition: all ease 2s;
     position: relative;
 }
@@ -274,6 +308,7 @@ section {
     line-height: 88px;
     padding: 1rem 0;
     animation: fadeIn 4s ease-in-out;
+    animation-delay: 1.5s;
 }
 
 .main-section-heading {
@@ -284,8 +319,10 @@ section {
 .main-sign-up {
     position: absolute;
     animation: fadeIn 4s ease-in-out;
-    font-size: 3rem;
+    animation-delay: 1.5s;
+    font-size: 2.5rem;
     line-height: 88px;
+    font-weight: 600;
     color: var(--accent-color) !important;
     text-decoration: underline;
 }

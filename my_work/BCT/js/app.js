@@ -10,27 +10,35 @@ gsap.to(".keyboard-img-rotate", {
   },
 });
 
-gsap.to(".main-section-content", {
-  yPercent: 150,
+gsap.to(".main-section-heading", {
+  xPercent: 5,
   opacity: 0,
-  ease: "none",
   scrollTrigger: {
-    trigger: ".main-section-content",
-    start: "top top",
-    end: "+=80",
-    scrub: true,
+    trigger: ".main-section-heading",
+    start: "center top",
+    end: "bottom top",
+    scrub: 2,
   },
 });
 
-// gsap.from(".bg-image-wrapper", {
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: ".bg-image-wrapper",
-//     start: "center top",
-//     end: "bottom top",
-//     scrub: true,
-//   },
-// });
+gsap.to(".bg-image", {
+  xPercent: 10,
+  scrollTrigger: {
+    trigger: ".main-section",
+    start: "top top",
+    end: "bottom center",
+    scrub: 1,
+    pin: true,
+  },
+});
+
+$(window).on("load", function () {
+  setTimeout(function () {
+    $(".preloader").fadeOut("slow", function () {
+      $(".test").css("display", "block");
+    });
+  }, 1500);
+});
 
 // NAV TOGGLE
 const navToggler = document.querySelector(".navbar-toggler");
