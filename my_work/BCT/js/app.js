@@ -49,12 +49,10 @@ navToggler.addEventListener("click", () => {
     navToggler.classList.add("open");
     navOpen = true;
     navUlOpen.classList.add("open");
-    document.body.classList.add("scroll-lock");
   } else {
     navToggler.classList.remove("open");
     navOpen = false;
     navUlOpen.classList.remove("open");
-    document.body.classList.remove("scroll-lock");
   }
 });
 
