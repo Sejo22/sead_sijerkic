@@ -64,10 +64,10 @@ export default function Home() {
         </div>
         {/* BACKGROUND EFFECTS END */}
 
-        <section className="flex justify-center items-center rounded-xl w-[800px] h-[800px] glass__bg">
+        <section className="flex justify-center items-center rounded-xl w-fit h-fit lg:w-[800px] lg:h-[800px] glass__bg p-2">
           <div className="flex flex-col items-center">
             {/* CARD HEADER */}
-            <h1 className="text-[48px] lg:text-[64px] font-bold py-2 fl__text_dark_blue uppercase">
+            <h1 className="text-[40px] lg:text-[64px] font-bold py-2 fl__text_dark_blue uppercase text-center">
               Coming soon
             </h1>
             <p className="text-xl fl__text_dark_blue text-center">
@@ -93,7 +93,7 @@ export default function Home() {
               />
               <button
                 type="submit"
-                className="h-12 ml-2 w-1/5 fl__blue rounded-lg font-semibold text-white border-2 fl__border_blue hover:bg-transparent hover:fl__border_blue hover:fl__text_blue duration-300"
+                className="h-12 ml-2 w-3/12 lg:w-1/5 fl__blue rounded-lg font-semibold text-white border-2 fl__border_blue hover:bg-transparent hover:fl__border_blue hover:fl__text_blue duration-300"
               >
                 Notify me
               </button>
@@ -128,7 +128,7 @@ export default function Home() {
               />
               <button
                 type="submit"
-                className="h-12 ml-2 w-2/12 bg-blue-500 rounded-lg font-semibold text-white  hover:fl__blue hover:text-white-500  duration-300 fl__dark_blue"
+                className="h-12 ml-2 w-4/12 lg:w-2/12 bg-blue-500 rounded-lg font-semibold text-white  hover:fl__blue hover:text-white-500  duration-300 fl__dark_blue"
               >
                 Sign in
               </button>
