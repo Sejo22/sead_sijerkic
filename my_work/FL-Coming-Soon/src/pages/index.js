@@ -1,11 +1,51 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import * as Icon from 'react-bootstrap-icons';
+import Head from "next/head";
+import { Inter } from "next/font/google";
+import * as Icon from "react-bootstrap-icons";
+import Timer from "./components/Timer";
+import { useEffect, useState } from "react";
 
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [timerDays, setTimerDays] = useState();
+  const [timerHours, setTimerHours] = useState();
+  const [timerMinutes, setTimerMinutes] = useState();
+  const [timerSeconds, setTimerSeconds] = useState();
+
+  let interval;
+
+  const startTimer = () => {
+    const countDownDate = new Date("30 Mar, 2023").getTime();
+
+    interval = setInterval(() => {
+      const now = new Date().getTime();
+
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (24 * 60 * 60 * 1000));
+      const hours = Math.floor(
+        (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
+      const seconds = Math.floor((distance % (60 * 1000)) / 1000);
+
+      if (distance < 0) {
+        // Timer set 0
+        clearInterval(interval.current);
+      } else {
+        // timer still counts
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
+    });
+  };
+
+  useEffect(() => {
+    startTimer();
+  });
+
   return (
     <>
       <Head>
@@ -15,55 +55,87 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="h-screen flex justify-center items-center ">
-        <div className='animation__scaleUp gradient__blue absolute w-[550px] h-[550px] top-10 left-[263px]'></div>
+        {/* BACKGROUND EFFECTS START */}
+        <div className="bg-effects w-full h-screen overflow-hidden absolute">
+          <div className="animation__scaleUp gradient__blue absolute w-[550px] h-[550px] top-10 left-[263px]"></div>
+          <div className="animation__scaleUp gradient__blue absolute w-[550px] h-[550px] bottom-[-200px] right-0"></div>
+          <div className="animation__scaleDown gradient__lightblue absolute w-[550px] h-[550px] right-40 top-0"></div>
+          <div className="animation__scaleDown gradient__lightblue absolute w-[550px] h-[550px] bottom-0 left-[19px] "></div>
+        </div>
+        {/* BACKGROUND EFFECTS END */}
 
-        <div className='animation__scaleUp gradient__blue absolute w-[550px] h-[550px] bottom-[-200px] right-0'></div>
+        <section className="flex justify-center items-center rounded-xl w-[800px] h-[800px] glass__bg">
+          <div className="flex flex-col items-center">
+            {/* CARD HEADER */}
+            <h1 className="text-[48px] lg:text-[64px] font-bold py-2 fl__text_dark_blue uppercase">
+              Coming soon
+            </h1>
+            <p className="text-xl fl__text_dark_blue text-center">
+              Refreshed version of FlexLists is under construction, follow us
+              for updates.
+            </p>
+            <Timer
+              timerDays={timerDays}
+              timerHours={timerHours}
+              timerMinutes={timerMinutes}
+              timerSeconds={timerSeconds}
+            />
+            {/* TIMER */}
 
-        <div className='animation__scaleDown gradient__lightblue absolute w-[550px] h-[550px] right-40 top-0'></div>
-        
-        <div className='animation__scaleDown gradient__lightblue absolute w-[550px] h-[550px] bottom-0 left-[19px] '></div>
-
-        <section className='flex justify-center items-center rounded-xl w-[800px] h-[800px] glass__bg'> 
-          <div className='flex flex-col items-center'>
-            <h1 className='text-[48px] lg:text-[64px] font-bold py-2 fl__text_dark_blue uppercase'>Coming soon</h1>
-            <p className='text-xl fl__text_dark_blue text-center'>Refreshed version of FlexLists is under construction, follow us for updates.</p>
-            <section className='flex w-10/12 justify-between items-center py-8'>
-              <section className='flex flex-col items-center justify-center rounded-md card__shadow px-6 py-4 lg:w-2/12 w-3/12 ml-1 mr-1'>
-                <h1 className=' text-3xl font-bold fl__text_blue'>10</h1>
-                <p className='text-base fl__text_dark_blue'><span>Days</span></p>
-              </section>
-              <section className='flex flex-col items-center justify-center rounded-md card__shadow px-6 py-4 lg:w-2/12 w-3/12 ml-1 mr-1'>
-                <h1 className=' text-3xl font-bold fl__text_blue'>10</h1>
-                <p className='text-base fl__text_dark_blue'><span>Hours</span></p>
-              </section>
-              <section className='flex flex-col items-center justify-center rounded-md card__shadow px-6 py-4 lg:w-2/12 w-3/12 ml-1 mr-1'>
-                <h1 className=' text-3xl font-bold fl__text_blue'>10</h1>
-                <p className='text-base fl__text_dark_blue'><span>Minutes</span></p>
-              </section>
-              <section className='flex flex-col items-center justify-center rounded-md card__shadow px-6 py-4 lg:w-2/12 w-3/12 ml-1 mr-1'>
-                <h1 className=' text-3xl font-bold fl__text_blue'>10</h1>
-                <p className='text-base fl__text_dark_blue '><span>Seconds</span></p>
-              </section>
-            </section>
-            <div className='flex flex-1 w-full py-4 justify-center'>
-              <input type="text" name="" id="" placeholder='Enter your email' className='h-12 w-3/5 py-4 px-2 rounded-lg border-2 border-gray-300 foucs:border-blue-400'/>  
-              <button type='submit'className='h-12 ml-2 w-1/5 fl__blue rounded-lg font-semibold text-white border-2 fl__border_blue hover:bg-transparent hover:fl__border_blue hover:fl__text_blue duration-300'>Notify me</button>
+            {/* NOTIFY ME */}
+            <div className="flex flex-1 w-full py-4 justify-center">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter your email"
+                className="h-12 w-3/5 py-4 px-2 rounded-lg border-2 border-gray-300 foucs:border-blue-400"
+              />
+              <button
+                type="submit"
+                className="h-12 ml-2 w-1/5 fl__blue rounded-lg font-semibold text-white border-2 fl__border_blue hover:bg-transparent hover:fl__border_blue hover:fl__text_blue duration-300"
+              >
+                Notify me
+              </button>
             </div>
-            
-            <div className='flex flex-1 w-40 py-6 items-center justify-between'><Icon.Facebook className=' text-[26px] text-gray-600 cursor-pointer'/>
-            <Icon.Twitter className=' text-[26px] text-gray-600 cursor-pointer' />
-            <Icon.Instagram className=' text-[26px] text-gray-600 cursor-pointer' /></div>
-            <hr className='w-full border-1 border-gray-300'/>
-            <div className='flex justify-start w-full pt-8'><p className=' m-2 fl__text_dark_blue text-xl'><span>Existing members login here</span></p></div>  
-            <div className='flex flex-col flex-1 w-full py-4 justify-center sm:flex-row sm:items-center'>
-              <input type="text" name="" id="" placeholder='Email' className='m-2 h-12 sm:w-5/12 py-4 px-2 mr-1 rounded-lg border-2 border-gray-300 foucs:border-blue-400'/>  
-              <input type="text" name="" id="" placeholder='Password' className='m-2 h-12 sm:w-5/12 py-4 px-2 mr-1 rounded-lg border-2 border-gray-300 foucs:border-blue-400'/>  
-              <button type='submit'className='h-12 ml-2 w-2/12 bg-blue-500 rounded-lg font-semibold text-white  hover:fl__blue hover:text-white-500  duration-300 fl__dark_blue'>Sign in</button>
+            {/* SOCIAL ICONS */}
+            <div className="flex flex-1 w-40 py-6 items-center justify-between">
+              <Icon.Facebook className=" text-[26px] text-gray-600 cursor-pointer" />
+              <Icon.Twitter className=" text-[26px] text-gray-600 cursor-pointer" />
+              <Icon.Instagram className=" text-[26px] text-gray-600 cursor-pointer" />
+            </div>
+            <hr className="w-full border-1 border-gray-300" />
+            {/* SIGN UP */}
+            <div className="flex justify-start w-full pt-8">
+              <p className=" m-2 fl__text_dark_blue text-xl">
+                <span>Existing members login here</span>
+              </p>
+            </div>
+            <div className="flex flex-col flex-1 w-full py-4 justify-center sm:flex-row sm:items-center">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Email"
+                className="m-2 h-12 sm:w-5/12 py-4 px-2 mr-1 rounded-lg border-2 border-gray-300 foucs:border-blue-400"
+              />
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Password"
+                className="m-2 h-12 sm:w-5/12 py-4 px-2 mr-1 rounded-lg border-2 border-gray-300 foucs:border-blue-400"
+              />
+              <button
+                type="submit"
+                className="h-12 ml-2 w-2/12 bg-blue-500 rounded-lg font-semibold text-white  hover:fl__blue hover:text-white-500  duration-300 fl__dark_blue"
+              >
+                Sign in
+              </button>
             </div>
           </div>
-            
         </section>
       </main>
     </>
-  )
+  );
 }
