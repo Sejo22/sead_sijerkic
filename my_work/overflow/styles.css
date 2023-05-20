@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    min-height: 80vh;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.overflow-box {
+    position: relative;
+}
+
+.overflow-wrapper {
+    flex-grow: 1;
+    padding-inline: 1rem;
+    border:  solid 1px red;
+    max-height: 200px;
+    margin-inline: 1rem;
+}
+
+p {
+    display: inline-block;
+    text-align: center;
+}
+
+span {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+}
+
+h4 {
+    text-align: center;
+    padding-block: 1rem;
+}
+
+.visible {
+    overflow-y: visible;
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.hidden {
+    overflow-y: hidden;
+}
