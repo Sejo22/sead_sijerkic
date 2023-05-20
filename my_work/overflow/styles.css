@@ -37,6 +37,8 @@ body {
 p {
     display: inline-block;
     text-align: center;
+    border: solid blue 1px;
+    height: 300px;
 }
 
 span {
@@ -50,6 +52,11 @@ span {
 h4 {
     text-align: center;
     padding-block: 1rem;
+}
+
+h5{
+    color: blue;
+    padding-block: 0.125rem;
 }
 
 .visible {
