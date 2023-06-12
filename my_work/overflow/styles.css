@@ -53,7 +53,6 @@ h4 {
     text-align: center;
     padding-block: 1rem;
 }
-
 h5{
     color: blue;
     padding-block: 0.125rem;
@@ -64,6 +63,7 @@ h5{
 }
 
 .scroll {
+    scroll-behavior: smooth;
     overflow-y: scroll;
 }
 

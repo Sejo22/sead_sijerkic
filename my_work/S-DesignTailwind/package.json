@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "animejs": "^3.2.1",
+    "joshjs": "^1.0.8"
+  },
+  "scripts": {
+    "tailwind": "tailwindcss  -i ./style.css -o build/tailwind.css --minify  & live-server  ",
+    "dev": " tailwindcss -i ./style.css -o ./dist/output.css --watch ",
+    "start": "live-server ./ ",
+    "build": "postcss css/main.css -o build/tailwind.css --minify"
+  }
+}
